@@ -601,32 +601,91 @@
 										615.987.1234<br/>
 									</address>
 								</div>
-								<form method="post" action="js-plugin/neko-contact-ajax-plugin/php/form-handler.php" id="contactfrm" role="form">
+								<form method="post" action="One_page/js-plugin/neko-contact-ajax-plugin/php/form-handler.php" id="contactfrm" role="form">
 
 									<div class="col-sm-4"> 
 										<div class="form-group">
-											<label for="name">Name</label>
-											<input type="text" class="form-control" name="name" id="name" placeholder="Enter name"  title="Please enter your name (at least 2 characters)"/>
+											<label for="name">役男姓名</label>
+											<input type="text" class="form-control" name="name" id="name" placeholder="姓名"  title="請輸入姓名(至少2個字)"/>
 										</div>
 										<div class="form-group">
-											<label for="email">Email</label>
-											<input type="email" class="form-control" name="email" id="email" placeholder="Enter email" title="Please enter a valid email address"/>
+											<label for="id">身分證字號</label>
+											<input type="text" class="form-control" name="id" id="id" placeholder="身分證字號"  title="請輸入正確的身分證字號"/>
 										</div>
 										<div class="form-group">
-											<label for="phone">Phone</label>
-											<input name="phone" class="form-control required digits" type="tel" id="phone" size="30" value="" placeholder="Enter phone number" title="Please enter a valid phone number (at least 10 characters)">
+											<label for="birthday">出生年月日</label>
+											<input type="text" class="form-control" name="birthday" id="birthday" placeholder="yyyy-mm-dd"  title="請輸入出生年月日，格式: yyyy-mm-dd"/>
+										</div>
+										<div class="form-group">
+											<label for="bdate">入伍日期</label>
+											<input type="text" class="form-control" name="bdate" id="bdate" placeholder="yyyy-mm-dd"  title="請輸入入伍日期，格式: yyyy-mm-dd"/>
+										</div>
+										<div class="form-group">
+											<label for="mtype">服役軍種</label>
+											<!-- <input type="text" class="form-control" name="mtype" id="mtype" placeholder="陸軍/海軍/空軍"  title="請輸入軍種"/> -->
+											<select class="form-control" name="mtype" required="true">
+												<option value="陸軍">陸軍</option>
+												<option value="海軍">海軍</option>
+												<option value="空軍">空軍</option>
+												<option value="一般替代役">一般替代役</option>
+												<option value="研發替代役">研發替代役</option>
+											</select>
+										</div>
+										<div class="form-group">
+											<label for="town">役男戶籍所屬區</label>
+											<!-- <input type="text" class="form-control" name="area" id="area" placeholder="xx區"  title="請輸入區"/> -->
+											<select class="form-control" name="town" required="true">
+												<option value="66000010">中區</option>
+												<option value="66000020">東區</option>
+												<option value="66000030">南區</option>
+												<option value="66000040">西區</option>
+												<option value="66000050">北區</option>
+												<option value="66000060">西屯區</option>
+												<option value="66000070">南屯區</option>
+												<option value="66000080">北屯區</option>
+												<option value="66000090">豐原區</option>
+												<option value="66000100">東勢區</option>
+												<option value="66000110">大甲區</option>
+												<option value="66000120">清水區</option>
+												<option value="66000130">沙鹿區</option>
+												<option value="66000140">梧棲區</option>
+												<option value="66000150">后里區</option>
+												<option value="66000160">神岡區</option>
+												<option value="66000170">潭子區</option>
+												<option value="66000180">大雅區</option>
+												<option value="66000190">新社區</option>
+												<option value="66000200">石岡區</option>
+												<option value="66000210">外埔區</option>
+												<option value="66000220">大安區</option>
+												<option value="66000230">烏日區</option>
+												<option value="66000240">大肚區</option>
+												<option value="66000250">龍井區</option>
+												<option value="66000260">霧峰區</option>
+												<option value="66000270">太平區</option>
+												<option value="66000280">大里區</option>
+												<option value="66000290">和平區</option>
+											</select>
 										</div>
 									</div>
 									<div class="col-sm-4">
 										<div class="form-group">
-											<label for="comments">Comments</label>
-											<textarea name="comment" class="form-control" id="comments" cols="3" rows="5" placeholder="Enter your message…" title="Please enter your message (at least 10 characters)"></textarea>
+											<label for="email">Email</label>
+											<input type="email" class="form-control" name="email" id="email" placeholder="xxx@xxx.xxx" title="請輸入有效的電子信箱"/>
 										</div>
+										<div class="form-group">
+											<label for="phone">連絡電話</label>
+											<input type="tel" class="form-control" name="phone" id="phone" placeholder="連絡電話" title="請輸入連絡電話">
+										</div>									
+										
+										<div class="form-group">
+											<label for="address">戶籍地址</label>
+											<input name="address" class="form-control" id="address" placeholder="戶籍地址" title="請輸入戶籍地址">
+										</div>										
 										<fieldset class="clearfix securityCheck">
-											<legend>Security</legend>
+											<legend>驗證碼</legend>
 											<div class="form-group">
 												<img src="/One_page/js-plugin/neko-contact-ajax-plugin/php/image.php" alt="Image verification" id="verifyImg"/>
-												<input class="required form-control" id="verify" name="verify" type="text" >
+												<input class="required form-control" id="verify" name="verify" type="text" title="請輸入驗證碼">
 											</div>
 										</fieldset>
 									</div>                        

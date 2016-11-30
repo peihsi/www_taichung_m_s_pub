@@ -966,22 +966,37 @@ jQuery(function() {
         rules: {
             name: {
                 required: true,
-                minlength: 3
+                minlength: 2
+            },
+            id: {
+                required: true,
+                minlength: 10                
+            },
+            birthday: {
+                required: true,
+                dateISO: true
+            },
+            bdate: {
+                required: true,
+                dateISO: true
             },
             email: {
                 required: true,
                 email: true
             },
-            // phone: {
+            phone: {
+                required: true,
+                minlength: 8,
+                // digits:true
+            },
+            verify:{
+                required: true
+            }
+            // comment: {
             //     required: true,
             //     minlength: 10,
-            //     digits:true
-            // },
-            comment: {
-                required: true,
-                minlength: 10,
-                maxlength: 350
-            }
+            //     maxlength: 350
+            // }
         }
     });
   }
