@@ -601,7 +601,7 @@
 										615.987.1234<br/>
 									</address>
 								</div>
-								<form method="post" action="One_page/js-plugin/neko-contact-ajax-plugin/php/form-handler.php" id="contactfrm" role="form">
+								<form method="post" action="index.php/formhandler/newfile" id="contactfrm" role="form">
 
 									<div class="col-sm-4"> 
 										<div class="form-group">
