@@ -90,6 +90,7 @@
 									<li><a href="#works"><i class="icon-popup-1"></i>參考資訊</a> </li>
 									<li><a href="#team"><i class="icon-users"></i>線上試算</a> </li>
 									<li style="display: none;"><a href="#contactSlice" id="homeform-nav-bt"><i class="icon-mail"></i>Contact</a> </li>
+									<li><a href="#process"><i class="icon-users"></i>進度查詢</a> </li>
 									<li><a href="https://wrapbootstrap.com/theme/ashley-one-page-parallax-bootstrap-3-WB0R11207?ref=littleNeko" target="_blank"><i class="icon-download-outline"></i>Download</a> </li>
 								</ul>
 							</div>
@@ -732,7 +733,73 @@
 							</div>
 						</div>
 					</section>
+					<div id="paralaxSlice4" data-stellar-background-ratio="0.5" >
+						<div class="maskParent">
+							<div class="paralaxMask"></div>
 
+							<div class="paralaxText">
+								<br><!--<blockquote></blockquote>--><br><br><br><br><br>
+
+							</div>
+						</div>
+					</div>
+					<section  id="process">
+						<div class="container">
+							<div class="row"><br>
+								<div class="col-sm-12">
+									<h1 class="noSubtitle">扶助申請案-辦理進度查詢</h1>
+								</div>
+
+								<div class="col-sm-4">
+									<h4>Address:</h4>
+									<address>
+										Himalaya Company<br/>
+										77 Mass. Ave., E14/E15<br/>
+										Cambridge, MA 02139-4307 USA <br/>
+									</address>
+									<h4>Phone:</h4>
+									<address>
+										615.987.1234<br/>
+									</address>
+								</div>
+								<form method="post" action="index.php/formhandler/newfile" id="contactfrm" role="form">
+
+									<div class="col-sm-4"> 
+										<div class="form-group">
+											<label for="name">役男姓名</label>
+											<input type="text" class="form-control" name="name" id="name" placeholder="姓名"  title="請輸入姓名(至少2個字)"/>
+										</div>
+										<div class="form-group">
+											<label for="id">身分證字號</label>
+											<input type="text" class="form-control" name="id" id="id" placeholder="身分證字號"  title="請輸入正確的身分證字號"/>
+										</div>
+										<div class="form-group">
+											<label for="birthday">出生年月日</label>
+											<input type="text" class="form-control" name="birthday" id="birthday" placeholder="yyyy-mm-dd"  title="請輸入出生年月日，格式: yyyy-mm-dd"/>
+										</div>
+									</div>
+									<div class="col-sm-4">
+										<div class="form-group">
+											<label for="phone">連絡電話</label>
+											<input type="tel" class="form-control" name="phone" id="phone" placeholder="連絡電話" title="請輸入連絡電話">
+										</div>																		
+										<fieldset class="clearfix securityCheck">
+											<legend>驗證碼</legend>
+											<div class="form-group">
+												<img src="/One_page/js-plugin/neko-contact-ajax-plugin/php/image.php" alt="Image verification" id="verifyImg"/>
+												<input class="required form-control" id="verify" name="verify" type="text" title="請輸入驗證碼">
+											</div>
+										</fieldset>
+									</div>                        
+									<div class="col-md-8 col-md-offset-4" style="margin-bottom: 5em;">
+										<div class="result"></div>
+										<button name="submit" type="submit" class="btn btn-lg" id="submit"> 送出查詢</button>
+										<br>
+									</div>
+								</form>
+							</div>
+						</div>
+					</section>
 					<!-- call to action -->
 					<!--<div class="container mb15">
 						<div class="row">
