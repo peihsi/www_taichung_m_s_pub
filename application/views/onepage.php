@@ -89,7 +89,7 @@
 									<li><a href="#services"><i class="icon-thumbs-up"></i>申請流程</a> </li>
 									<li><a href="#works"><i class="icon-popup-1"></i>參考資訊</a> </li>
 									<li><a href="#team"><i class="icon-users"></i>線上試算</a> </li>
-									<li><a href="#contactSlice"><i class="icon-mail"></i>Contact</a> </li>
+									<li style="display: none;"><a href="#contactSlice" id="homeform-nav-bt"><i class="icon-mail"></i>Contact</a> </li>
 									<li><a href="https://wrapbootstrap.com/theme/ashley-one-page-parallax-bootstrap-3-WB0R11207?ref=littleNeko" target="_blank"><i class="icon-download-outline"></i>Download</a> </li>
 								</ul>
 							</div>
@@ -512,7 +512,7 @@
 									<h1>線上試算</h1>
 									<h2 class="subTitle">協助您概略性的評估是否符合申請資格</h2>
 								</div>
-								<div class="col-sm-6 col-sm-offset-3" style="transition: 1s;">
+								<div class="col-sm-6 col-sm-offset-3" id="home_page1" style="transition: 1s;">
 									<div class="form-group">
 										<label for="home_members">家中人口數</label>
 										<input type="number" class="form-control" name="home_members" id="home_members" placeholder="輸入人數"  title="請輸入您的家庭成員數"/>
@@ -524,23 +524,26 @@
 									</div>
 									<div class="form-group collapse" aria-expanded="false" style="height: 0px;">
 										<label for="home_income">家庭平均月所得有超過<span>100,000</span>元嗎?</label>
-										<select name="home_income" class="form-control required digits" type="tel" id="home_income" size="1" value="" placeholder="應被排除之家屬人數" title="請輸入應被排除之家屬人數"><option value="Y">超過</option><option value="N">未超過</option></select>
+										<select name="home_income" class="form-control required digits" type="tel" id="home_income" size="1" value="" placeholder="應被排除之家屬人數" title="請輸入應被排除之家屬人數"><option>請選擇</option><option value="Y">超過</option><option value="N">未超過</option></select>
 									</div>
 								</div>
-								<div class="col-sm-6"> 
+								<div class="col-sm-6 form-group collapse" id="home_page2" aria-expanded="false" style="height: 0px;"> 
 									<div class="form-group">
 										<label for="home_property">家庭全部總動產有超過<span>100,000</span>元嗎?</label>
 										<P>動產為全家人的存款本金、投資及有價證券按面額計算之合計</P>
-										<select name="home_property" class="form-control required digits" type="tel" id="home_property" size="1" value="" placeholder="應被排除之家屬人數" title="請輸入應被排除之家屬人數"><option value="Y">超過</option><option value="N">未超過</option></select>
+										<select name="home_property" class="form-control required digits" type="tel" id="home_property" size="1" value="" placeholder="應被排除之家屬人數" title="請輸入應被排除之家屬人數"><option>請選擇</option><option value="Y">超過</option><option value="N">未超過</option></select>
 									</div>
-									<div class="form-group" >
-										<label for="home_immproperty">家庭全部不動產有超過<span>100,000</span>元嗎?</label>
+									<div class="form-group collapse" aria-expanded="false" style="height: 0px;">
+										<label for="home_immproperty">家庭全部不動產有超過<span>5280,000</span>元嗎?</label>
 										<P>以政府公告之房屋現值及土地公告現值計算，自用住宅與其土地不用計入</P>
-										<select name="home_immproperty" class="form-control required digits" type="tel" id="home_immproperty" size="1" value="" placeholder="應被排除之家屬人數" title="請輸入應被排除之家屬人數"><option value="Y">超過</option><option value="N">未超過</option></select>
+										<select name="home_immproperty" class="form-control required digits" type="tel" id="home_immproperty" size="1" value="" placeholder="應被排除之家屬人數" title="請輸入應被排除之家屬人數"><option>請選擇</option><option value="Y">超過</option><option value="N">未超過</option></select>
 									</div>
-									<div class="form-group">
-										<label for="home_income">家庭平均月所得有超過<span>100,000</span>元嗎?</label>
-										<select name="home_income" class="form-control required digits" type="tel" id="home_income" size="1" value="" placeholder="應被排除之家屬人數" title="請輸入應被排除之家屬人數"><option value="Y">超過</option><option value="N">未超過</option></select>
+									<br>
+									<br>
+									<div class="form-group collapse" aria-expanded="false" style="height: 0px;">
+										<label for="home_result">概算結果</label>
+										<div name="home_result" class="form-control required digits" type="tel" id="home_result" style="height: 10em;">貴戶可能符合</div>
+										<br><a class="btn btn-lg alert-link" href="#" id="show_form_bt">立刻登記</a>
 									</div>
 								</div>
 
@@ -603,7 +606,7 @@
 						</div>
 					</section>
 
-					<div id="paralaxSlice4" data-stellar-background-ratio="0.5" >
+					<!--<div id="paralaxSlice4" data-stellar-background-ratio="0.5" >
 						<div class="maskParent">
 							<div class="paralaxMask"></div>
 
@@ -612,13 +615,13 @@
 
 							</div>
 						</div>
-					</div>
-					<section class="slice"  id="contactSlice" >
+					</div>-->
+					<section  id="contactSlice"  class="slice collapse" aria-expanded="false" style="height: 0px;">
 						<div class="container">
 							<div class="row">
 
 								<div class="col-sm-12">
-									<h1 class="noSubtitle">Contact us</h1>
+									<h1 class="noSubtitle">扶助申請案-線上登記</h1>
 								</div>
 
 								<div class="col-sm-4">
@@ -723,7 +726,7 @@
 									</div>                        
 									<div class="col-md-8 col-md-offset-4">
 										<div class="result"></div>
-										<button name="submit" type="submit" class="btn btn-lg" id="submit"> Submit</button>
+										<button name="submit" type="submit" class="btn btn-lg" id="submit"> 送出申請</button>
 									</div>
 								</form>
 							</div>
@@ -731,7 +734,7 @@
 					</section>
 
 					<!-- call to action -->
-					<div class="container mb15">
+					<!--<div class="container mb15">
 						<div class="row">
 							<div class="col-md-12">
 								<div class="color1 ctaBox ">
@@ -751,7 +754,7 @@
 								</div>
 							</div>
 						</div>
-					</div>
+					</div>-->
 					<!-- call to action -->
 
 					<!-- content -->
