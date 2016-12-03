@@ -512,21 +512,38 @@
 									<h1>線上試算</h1>
 									<h2 class="subTitle">協助您概略性的評估是否符合申請資格</h2>
 								</div>
-								<div class="col-sm-4 col-sm-offset-4"> 
-										<div class="form-group">
-											<label for="home_members">家中人口數</label>
-											<input type="number" class="form-control" name="home_members" id="home_members" placeholder="輸入人數"  title="請輸入您的家庭成員數"/>
-										</div>
-										<div class="form-group" >
-											<label for="home_not_members">應被排除之家屬人數</label>
-											<p>前一項之家屬中，有幾人符合下列任一條件?<ul><li> 一、應徵（召）服兵役。但研發或產業訓儲替代役役男第三階段服役期間 之工作收入，應予列計。 </li><li>二、榮民領有院外就養生活費。</li><li>三、在學領有公費。</li><li>四、入獄服刑、因案遭受羈押或依法受拘禁。</li><li>五、失蹤經向警察機關報案協尋未獲達六個月以上。但遭遇特別災難失蹤 經證明者，不在此限。</li><li>六、經政府公費安置收容並負擔其全部費用。</li><li>七、尚未設有戶籍之非本國籍配偶或大陸地區配偶。</li><li>八、未共同生活且無扶養事實之特殊境遇單親家庭直系血親尊親屬。</li><li>九、未與單親家庭未成年子女共同生活、無扶養事實，且未行使、負擔其 對未成年子女權利義務之父或母。</li><li>十、因父母離異而未共同生活且無扶養事實之兄弟姐妹。</li><li>十一、因其他情形特殊，未履行扶養義務，致申請人生活陷於困境，經直 轄市、縣（市）主管機關訪視評估以役男家屬最佳利益考量，認定 以不列入應計算人口為宜。</li></ul></p>
-											<input type="number" class="form-control" name="home_not_members" id="home_not_members" placeholder="應被排除之家屬人數" title="請輸入應被排除之家屬人數"/>
-										</div>
-										<div class="form-group">
-											<label for="home_not_members">Phone</label>
-											<input name="home_not_members" class="form-control required digits" type="tel" id="home_not_members" size="30" value="" placeholder="應被排除之家屬人數" title="請輸入應被排除之家屬人數">
-										</div>
+								<div class="col-sm-6 col-sm-offset-3" style="transition: 1s;">
+									<div class="form-group">
+										<label for="home_members">家中人口數</label>
+										<input type="number" class="form-control" name="home_members" id="home_members" placeholder="輸入人數"  title="請輸入您的家庭成員數"/>
 									</div>
+									<div class="form-group collapse" aria-expanded="false" style="height: 0px;">
+										<p>前一項之家屬中，有幾人符合下列任一條件?(屬於應被排除家屬)<ul><li> 一、應徵（召）服兵役。但研發或產業訓儲替代役役男第三階段服役期間 之工作收入，應予列計。 </li><li>二、榮民領有院外就養生活費。</li><li>三、在學領有公費。</li><li>四、入獄服刑、因案遭受羈押或依法受拘禁。</li><li>五、失蹤經向警察機關報案協尋未獲達六個月以上。但遭遇特別災難失蹤 經證明者，不在此限。</li><li>六、經政府公費安置收容並負擔其全部費用。</li><li>七、尚未設有戶籍之非本國籍配偶或大陸地區配偶。</li><li>八、未共同生活且無扶養事實之特殊境遇單親家庭直系血親尊親屬。</li><li>九、未與單親家庭未成年子女共同生活、無扶養事實，且未行使、負擔其 對未成年子女權利義務之父或母。</li><li>十、因父母離異而未共同生活且無扶養事實之兄弟姐妹。</li><li>十一、因其他情形特殊，未履行扶養義務，致申請人生活陷於困境，經直 轄市、縣（市）主管機關訪視評估以役男家屬最佳利益考量，認定 以不列入應計算人口為宜。</li></ul></p>
+										<label for="home_not_members">應被排除之家屬人數</label>
+										<input type="number" class="form-control" name="home_not_members" id="home_not_members" placeholder="應被排除之家屬人數" title="請輸入應被排除之家屬人數"/>
+									</div>
+									<div class="form-group collapse" aria-expanded="false" style="height: 0px;">
+										<label for="home_income">家庭平均月所得有超過<span>100,000</span>元嗎?</label>
+										<select name="home_income" class="form-control required digits" type="tel" id="home_income" size="1" value="" placeholder="應被排除之家屬人數" title="請輸入應被排除之家屬人數"><option value="Y">超過</option><option value="N">未超過</option></select>
+									</div>
+								</div>
+								<div class="col-sm-6"> 
+									<div class="form-group">
+										<label for="home_property">家庭全部總動產有超過<span>100,000</span>元嗎?</label>
+										<P>動產為全家人的存款本金、投資及有價證券按面額計算之合計</P>
+										<select name="home_property" class="form-control required digits" type="tel" id="home_property" size="1" value="" placeholder="應被排除之家屬人數" title="請輸入應被排除之家屬人數"><option value="Y">超過</option><option value="N">未超過</option></select>
+									</div>
+									<div class="form-group" >
+										<label for="home_immproperty">家庭全部不動產有超過<span>100,000</span>元嗎?</label>
+										<P>以政府公告之房屋現值及土地公告現值計算，自用住宅與其土地不用計入</P>
+										<select name="home_immproperty" class="form-control required digits" type="tel" id="home_immproperty" size="1" value="" placeholder="應被排除之家屬人數" title="請輸入應被排除之家屬人數"><option value="Y">超過</option><option value="N">未超過</option></select>
+									</div>
+									<div class="form-group">
+										<label for="home_income">家庭平均月所得有超過<span>100,000</span>元嗎?</label>
+										<select name="home_income" class="form-control required digits" type="tel" id="home_income" size="1" value="" placeholder="應被排除之家屬人數" title="請輸入應被排除之家屬人數"><option value="Y">超過</option><option value="N">未超過</option></select>
+									</div>
+								</div>
+
 
 								<!--<div class="col-sm-4">
 									<article>
@@ -824,5 +841,6 @@
 
 		<!-- Custom  -->
 		<script type="text/javascript" src="/One_page/js/custom.js"></script>
+		<script type="text/javascript" src="/One_page/js/home_count.js"></script>
 	</body>
 	</html>
