@@ -78,6 +78,36 @@ $(document).ready(function() {
 		/* Act on the event */
 	});
 
+	$("#town").on('change', function(event){
+            $('#village').empty();
+            // $("#MSG").text("連線中...");
+            $.ajax({
+                url: 'index.php/area/get_village_by_town',
+                type: 'post',
+                dataType: 'json',
+                data: {
+                    town: $("#town").val()
+                }
+            })
+            .always(function() {
+                console.log("complete");                  
+            })
+            .done(function(responsive_) {
+                //var result = JSON.parse(responsive);
+                var responsive = responsive_['village_list'];
+                //console.log(responsive);
+                var seloption = "";
+                $.each(responsive, function(index, record){
+                    seloption += '<option value="'+record.Village_id+'">'+record.Village_name+'</option>'; 
+                });
+
+                $('#village').append(seloption);
+                console.log("success");
+            })
+            .fail(function() {
+                console.log("error");
+            }); //更新村里下拉選單		
+	});
 	
 
 

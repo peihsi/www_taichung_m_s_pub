@@ -22,7 +22,7 @@ class Formhandler extends CI_Controller {
 		$exists = $this->boy_model->exists($id);		
 		
 		if ($exists){
-			log_message('debug', 'cannot create a new file, because boy alreay exists.');
+			log_message('debug', 'cannot create a new file, because boy ID alreay exists.');
 			echo '<div class="alert alert-danger">役男已送過申請</div>';			
 		}else{
 			//boy info
@@ -30,7 +30,7 @@ class Formhandler extends CI_Controller {
 			$birthday = $this->input->post('birthday');
 			$begin_date = $this->input->post('bdate');
 			$type = $this->input->post('mtype');
-			$status ='';	//TODO 服役狀態為空白
+			$status ='服役中';	// 服役狀態預設為'服役中'
 			
 			$boy_key = $this->boy_model->add_new_boy($name, $id, $birthday, $begin_date, $type, $status);
 				
@@ -38,9 +38,9 @@ class Formhandler extends CI_Controller {
 			$email = $this->input->post('email');
 			$phone = $this->input->post('phone');
 			$address = $this->input->post('address');					
-			$county = ''; 		//TODO county空白
+			$county = $this->input->post('county');
 			$town = $this->input->post('town');
-			$village = '';		//TODO village為空白	
+			$village = $this->input->post('village');
 			$today = date("Y-m-d H:i:s");
 			
 			$file_key = $this->file_model->add_new_file($today, $boy_key, $county, $town, $village, $address, $email, $phone);
