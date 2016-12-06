@@ -658,8 +658,7 @@
 										</div>
 										<div class="form-group">
 											<label for="mtype">服役軍種</label>
-											<!-- <input type="text" class="form-control" name="mtype" id="mtype" placeholder="陸軍/海軍/空軍"  title="請輸入軍種"/> -->
-											<select class="form-control" name="mtype" required="true">
+											<select class="form-control" name="mtype">
 												<option value="陸軍">陸軍</option>
 												<option value="海軍">海軍</option>
 												<option value="空軍">空軍</option>
@@ -668,9 +667,17 @@
 											</select>
 										</div>
 										<div class="form-group">
-											<label for="town">役男戶籍所屬區</label>
-											<!-- <input type="text" class="form-control" name="area" id="area" placeholder="xx區"  title="請輸入區"/> -->
-											<select class="form-control" name="town" required="true">
+											<label for="phone">連絡電話</label>
+											<input type="tel" class="form-control" name="phone" id="phone" placeholder="連絡電話" title="請輸入連絡電話">
+										</div>				
+									</div>
+									<div class="col-sm-4">
+										<div class="form-group">
+											<label for="town">戶籍地址</label><br>
+											<select class="form-control" name="county"  style="width: 32.3333%;display: inline;">
+												<option value="66000">臺中市</option>	
+											</select>
+											<select class="form-control" name="town" id="town" style="width: 32.3333%;display: inline;">
 												<option value="66000010">中區</option>
 												<option value="66000020">東區</option>
 												<option value="66000030">南區</option>
@@ -701,22 +708,23 @@
 												<option value="66000280">大里區</option>
 												<option value="66000290">和平區</option>
 											</select>
+											<select class="form-control" name="village" id="village" style="width: 32.3333%;display: inline;">
+												<option value="6938">繼光里</option>
+												<option value="6939">大墩里</option>
+												<option value="6940">綠川里</option>
+												<option value="6941">公園里</option>
+												<option value="6942">光復里</option>
+												<option value="6943">柳川里</option>
+												<option value="6944">大誠里</option>
+												<option value="6945">中華里</option>
+											</select>
+											<br>
+											<input class="form-control" name="address" id="address" placeholder="地址" title="請輸入正確地址">
 										</div>
-									</div>
-									<div class="col-sm-4">
 										<div class="form-group">
-											<label for="email">Email</label>
+											<label for="email">電子信箱</label>
 											<input type="email" class="form-control" name="email" id="email" placeholder="xxx@xxx.xxx" title="請輸入有效的電子信箱"/>
 										</div>
-										<div class="form-group">
-											<label for="phone">連絡電話</label>
-											<input type="tel" class="form-control" name="phone" id="phone" placeholder="連絡電話" title="請輸入連絡電話">
-										</div>									
-										
-										<div class="form-group">
-											<label for="address">戶籍地址</label>
-											<input name="address" class="form-control" id="address" placeholder="戶籍地址" title="請輸入戶籍地址">
-										</div>										
 										<fieldset class="clearfix securityCheck">
 											<legend>驗證碼</legend>
 											<div class="form-group">
@@ -724,7 +732,7 @@
 												<input class="required form-control" id="verify" name="verify" type="text" title="請輸入驗證碼">
 											</div>
 										</fieldset>
-									</div>                        
+									</div> 									
 									<div class="col-md-8 col-md-offset-4">
 										<div class="result"></div>
 										<button name="submit" type="submit" class="btn btn-lg" id="submit"> 送出申請</button>

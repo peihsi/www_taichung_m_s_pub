@@ -980,8 +980,12 @@ jQuery(function() {
                 required: true,
                 dateISO: true
             },
-            email: {
+            address:{
                 required: true,
+                minlength: 5
+            },
+            email: {
+                //required: true,
                 email: true
             },
             phone: {
