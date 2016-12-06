@@ -338,8 +338,8 @@
 								</div>
 								<section class="boxContent">
 									<h3>各等級扶助標準</h3>
-									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi vulputate nunc ut tellus sollicitudin placerat. <br>
-										<a href="portfolio-project-fullwidth-video.html" class="moreLink portfolioSheet">&rarr; read more</a>
+									<p>民國106年度全國各縣市中低收入戶財產限制規則<br><br><br><br>
+										<!--<a href="portfolio-project-fullwidth-video.html" class="moreLink portfolioSheet">&rarr; read more</a>-->
 									</p>
 								</section>
 							</article>
@@ -363,8 +363,8 @@
 								</div>
 								<section class="boxContent">
 									<h3>各縣市中低收入戶所得限制</h3>
-									<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi vulputate nunc ut tellus sollicitudin placerat. <br>
-										<a href="portfolio-project-fullwidth-carousel.html" class="moreLink portfolioSheet">&rarr; read more</a> 
+									<p>民國106年度全國各縣市中低收入戶財產限制規則<br><br><br><br>
+										<!--<a href="portfolio-project-fullwidth-video.html" class="moreLink portfolioSheet">&rarr; read more</a>-->
 									</p>
 								</section>
 							</article>
@@ -386,9 +386,12 @@
 								</div>
 								<section class="boxContent">
 									<h3>完整法條參照</h3>
-									<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi vulputate nunc ut tellus sollicitudin placerat. <br>
-										<a href="portfolio-project-fullwidth-carousel.html" class="moreLink portfolioSheet">&rarr; read more</a> 
+									<p>民國106年度全國各縣市中低收入戶財產限制規則<br><br><br><br>
+										<!--<a href="portfolio-project-fullwidth-video.html" class="moreLink portfolioSheet">&rarr; read more</a>-->
 									</p>
+									<!--<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi vulputate nunc ut tellus sollicitudin placerat. <br>
+										<a href="portfolio-project-fullwidth-carousel.html" class="moreLink portfolioSheet">&rarr; read more</a> 
+									</p>-->
 								</section>
 							</article>
 
@@ -411,8 +414,8 @@
 								</div>
 								<section class="boxContent">
 									<h3>家屬資格認定</h3>
-									<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi vulputate nunc ut tellus sollicitudin placerat. <br>
-										<a href="portfolio-project-fullwidth-image.html" class="moreLink portfolioSheet">&rarr; read more</a> 
+									<p>民國106年度全國各縣市中低收入戶財產限制規則<br><br><br><br>
+										<!--<a href="portfolio-project-fullwidth-video.html" class="moreLink portfolioSheet">&rarr; read more</a>-->
 									</p>
 								</section>
 							</article>
@@ -437,8 +440,8 @@
 								</div>
 								<section class="boxContent">
 									<h3>申請與判定流程圖</h3>
-									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi vulputate nunc ut tellus sollicitudin placerat.<br>
-										<a href="portfolio-project-fullwidth-image.html" class="moreLink portfolioSheet">&rarr; read more</a> 
+									<p>民國106年度全國各縣市中低收入戶財產限制規則<br><br><br><br>
+										<!--<a href="portfolio-project-fullwidth-video.html" class="moreLink portfolioSheet">&rarr; read more</a>-->
 									</p>
 								</section>
 							</article>
@@ -462,8 +465,8 @@
 								</div>
 								<section class="boxContent">
 									<h3>應備文件</h3>
-									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi vulputate nunc ut tellus sollicitudin placerat.<br>
-										<a href="portfolio-project-fullwidth-image.html" class="moreLink portfolioSheet">&rarr; read more</a> 
+									<p>民國106年度全國各縣市中低收入戶財產限制規則<br><br><br><br>
+										<!--<a href="portfolio-project-fullwidth-video.html" class="moreLink portfolioSheet">&rarr; read more</a>-->
 									</p>
 								</section>
 							</article>
@@ -486,9 +489,9 @@
 									</div>
 									<section class="boxContent">
 										<h3>各地區公所</h3>
-										<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi vulputate nunc ut tellus sollicitudin placerat. <br>
-											<a href="portfolio-project-fullwidth-carousel.html" class="moreLink portfolioSheet">&rarr; read more</a> 
-										</p>
+										<p>民國106年度全國各縣市中低收入戶財產限制規則<br><br><br><br>
+										<!--<a href="portfolio-project-fullwidth-video.html" class="moreLink portfolioSheet">&rarr; read more</a>-->
+									</p>
 									</section>
 								</article>
 
@@ -626,13 +629,13 @@
 								</div>
 
 								<div class="col-sm-4">
-									<h4>Address:</h4>
+									<h4>地址:</h4>
 									<address>
-										Himalaya Company<br/>
-										77 Mass. Ave., E14/E15<br/>
-										Cambridge, MA 02139-4307 USA <br/>
+										臺中市<br/>
+										西屯區 台灣大道OOXX號<br/>
+										台中市政府惠中樓<br/>
 									</address>
-									<h4>Phone:</h4>
+									<h4>電話:</h4>
 									<address>
 										615.987.1234<br/>
 									</address>
@@ -759,13 +762,13 @@
 								</div>
 
 								<div class="col-sm-4">
-									<h4>Address:</h4>
+									<h4>地址:</h4>
 									<address>
-										Himalaya Company<br/>
-										77 Mass. Ave., E14/E15<br/>
-										Cambridge, MA 02139-4307 USA <br/>
+										臺中市<br/>
+										西屯區 台灣大道OOXX號<br/>
+										台中市政府惠中樓<br/>
 									</address>
-									<h4>Phone:</h4>
+									<h4>電話:</h4>
 									<address>
 										615.987.1234<br/>
 									</address>
@@ -838,45 +841,28 @@
 						<section id="mainFooter">
 							<div class="container" id="footer">
 								<div class="row">
-									<div class="col-sm-4">
+									<div class="col-sm-6">
 										<div class="footerWidget">
-											<img src="/One_page/images/neko-logo.png" alt="latest Little Neko news" id="footerLogo">
-											<p><a href="http://www.little-neko.com" title="Little Neko, website template creation">Little Neko</a> is a web design and development studio. We build responsive HTML5 and CSS3 templates, integrating best web design practises and up-to-date web technologies to create great user experiences. We love what we do and we hope you too ! </p>
+											<a href="http://www.civil.taichung.gov.tw/" title="臺中市政府民政局" target="_blank"><img src="One_Page/images/main-logo.png" alt="臺中市政府民政局" id="footerLogo"></a>
+											<p><span style="color: #f5fe78;">臺中市服兵役役男家屬扶助網</span>是一個便捷的臺中市役男家屬扶助整合資訊平台。我們希望能藉此帶給民眾更完整、更充足、更方便的相關資訊。也歡迎您直接來電洽詢。</p>
 										</div>
 									</div>
-
-
-									<div class="col-sm-4">
+									<div class="col-sm-6">
 										<div class="footerWidget">
-											<h3>Little NEKO</h3>
+
+											<h3>聯絡資訊</h3>
 											<address>
-												<p> <i class="icon-location"></i>&nbsp;77 Mass. Ave., E14/E15<br>
-													Cambridge, MA 02139-4307 USA <br>
-													<i class="icon-phone"></i>&nbsp;615.987.1234 <br>
-													<i class="icon-mail-alt"></i>&nbsp;<a href="mailto:little@little-neko.com">little@little-neko.com</a>
-												</p>
-											</address>
+												<p> <i class="icon-location"></i>&nbsp;40701臺中市西屯區
+													臺灣大道三段99號惠中樓6樓<br>
+													<i class="icon-phone"></i>&nbsp;勤務管理科專線：04-2217-7166<br>
+													<!--<i class="icon-mail-alt"></i>&nbsp;<a href="mailto:little@little-neko.com">little@little-neko.com</a> </p>-->
+												</address>
+											</div>
 										</div>
 									</div>
-
-									<div class="col-sm-4">
-										<div class="footerWidget">
-											<h3>We're social</h3>
-											<ul class="socialNetwork pull-right">
-												<li><a href="#" class="tips" title="follow me on Facebook"><i class="icon-facebook-1 iconRounded"></i></a></li>
-												<li><a href="https://twitter.com/LIttleNeko1" class="tips" title="follow me on Twitter" target="_blank"><i class="icon-twitter-bird iconRounded"></i></a></li>
-												<li><a href="#" class="tips" title="follow me on Google+"><i class="icon-gplus-1 iconRounded"></i></a></li>
-												<li><a href="#" class="tips" title="follow me on Linkedin"><i class="icon-linkedin-1 iconRounded"></i></a></li>
-												<li><a href="#" class="tips" title="follow me on Dribble"><i class="icon-dribbble iconRounded"></i></a></li>
-											</ul>     
-
-										</div>
-									</div>
-
 								</div>
-							</div>
-						</section>
-					</footer>
+							</section>
+						</footer>
 					<section  id="footerRights">
 						<div class="container">
 							<div class="row">
