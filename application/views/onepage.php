@@ -65,6 +65,9 @@
     			max-width: 300px; /* Max Width of the popover (depending on the container!) */
     			white-space: pre-wrap;  
 			}
+			.mask {
+    			background-color: rgba(67, 182, 177, 0.41);
+			}
 		</style>
 	</head>
 	<body data-spy="scroll" data-target="#scrollTarget" data-offset="150" id="fullScreen">
@@ -313,12 +316,12 @@
 						<div class="portfolio-items  isotopeWrapper clearfix imgHover row" id="3">
 							<article class="col-sm-4 isotopeItem women">
 								<section class="imgWrapper">
-									<img alt="" src="/One_page/images/portfolio/vign6.jpg" class="img-responsive">
+									<img alt="" src="/One_page/images/portfolio/vign1.png" class="img-responsive">
 								</section>
 								<div class="mediaHover">
 									<div class="mask"></div>
 									<div class="iconLinks"> 
-										<a href="portfolio-project-fullwidth-image.html" title="link" class="sizer portfolioSheet">
+										<a href="Law01.html" title="link" class="sizer portfolioSheet">
 											<i class="icon-zoom-in-outline iconRounded iconBig"></i>
 											<span>詳情</span>
 										</a> 
@@ -336,12 +339,12 @@
 
 							<article class="col-sm-4 isotopeItem cats graphics">
 								<section class="imgWrapper"> 
-									<img alt="" src="/One_page/images/portfolio/vign1.jpg" class="img-responsive"> 
+									<img alt="" src="/One_page/images/portfolio/vign1.png" class="img-responsive"> 
 								</section>
 								<div class="mediaHover">
 									<div class="mask"></div>
 									<div class="iconLinks"> 
-										<a href="portfolio-project-fullwidth-image.html" title="link" class="sizer portfolioSheet">
+										<a href="Law01.html" title="link" class="sizer portfolioSheet">
 											<i class="icon-zoom-in-outline iconRounded iconBig"></i>
 											<span>詳情</span>
 										</a>  
@@ -361,18 +364,14 @@
 
 							<article class="col-sm-4 isotopeItem women">
 								<section class="imgWrapper">
-									<img alt="" src="/One_page/images/portfolio/vign7.jpg" class="img-responsive">
+									<img alt="" src="/One_page/images/portfolio/vign1.png" class="img-responsive">
 								</section>
 								<div class="mediaHover">
 									<div class="mask"></div>
 									<div class="iconLinks"> 
-										<a href="portfolio-project-fullwidth-video.html" title="link" class="sizer portfolioSheet">
+										<a href="Law01.html" title="link" class="sizer portfolioSheet">
 											<i class="icon-videocam iconRounded iconBig"></i>
 											<span>link</span>
-										</a> 
-										<a href="http://vimeo.com/ondemand/5335/75660130" class="image-iframe" title="Video Popup" >
-											<i class="icon-search iconRounded iconBig"></i>
-											<span>video</span>
 										</a> 
 									</div>
 								</div>
@@ -386,18 +385,14 @@
 
 							<article class="col-sm-4 isotopeItem cats graphics">
 								<section class="imgWrapper">
-									<img alt="" src="/One_page/images/portfolio/vign3.jpg" class="img-responsive">
+									<img alt="" src="/One_page/images/portfolio/vign1.png" class="img-responsive">
 								</section>
 								<div class="mediaHover">
 									<div class="mask"></div>
 									<div class="iconLinks"> 
-										<a href="portfolio-project-fullwidth-carousel.html" title="link" class="sizer portfolioSheet">
+										<a href="Law01.html" title="link" class="sizer portfolioSheet">
 											<i class="icon-camera iconRounded iconBig"></i>
 											<span>link</span>
-										</a> 
-										<a href="images/portfolio/carousel-1.jpg" class="image-link" title="Zoom" data-gallery="images/portfolio/carousel-2.jpg,images/portfolio/carousel-3.jpg">
-											<i class="icon-search iconRounded iconBig"></i>
-											<span>gallery</span>
 										</a> 
 									</div>
 								</div>
@@ -410,17 +405,13 @@
 							</article>
 							<article class="col-sm-4 isotopeItem cats">
 								<section class="imgWrapper"> 
-									<img alt="" src="/One_page/images/portfolio/vign2.jpg" class="img-responsive"> 
+									<img alt="" src="/One_page/images/portfolio/vign1.png" class="img-responsive"> 
 								</section>
 								<div class="mediaHover">
 									<div class="mask"></div>
 									<div class="iconLinks">
-										<a href="portfolio-project-fullwidth-carousel.html" title="link" class="sizer portfolioSheet"> <i class="icon-picture iconRounded iconBig"></i>
+										<a href="Law01.html" title="link" class="sizer portfolioSheet"> <i class="icon-picture iconRounded iconBig"></i>
 											<span>link</span>
-										</a>
-										<a href="images/portfolio/zoom2.jpg" class="image-link" title="Gallery Popup" >
-											<i class="icon-search iconRounded iconBig"></i>
-											<span>zoom</span>
 										</a>
 									</div>
 								</div>
@@ -437,18 +428,14 @@
 
 							<article class="col-sm-4 isotopeItem graphics">
 								<section class="imgWrapper"> 
-									<img alt="" src="/One_page/images/portfolio/vign4.jpg" class="img-responsive"> 
+									<img alt="" src="/One_page/images/portfolio/vign1.png" class="img-responsive"> 
 								</section>
 								<div class="mediaHover">
 									<div class="mask"></div>
 									<div class="iconLinks">
-										<a href="portfolio-project-fullwidth-image.html" title="link" class="sizer portfolioSheet">
+										<a href="Law01.html" title="link" class="sizer portfolioSheet">
 											<i class="icon-picture iconRounded iconBig"></i>
 											<span>link</span>
-										</a>
-										<a href="images/portfolio/zoom4.jpg" class="image-link" title="Zoom">
-											<i class="icon-search iconRounded iconBig"></i>
-											<span>zoom</span>
 										</a>
 									</div>
 								</div>
@@ -463,18 +450,14 @@
 
 							<article class="col-sm-4 isotopeItem proc">
 								<section class="imgWrapper"> 
-									<img alt="" src="/One_page/images/portfolio/vign8.jpg" class="img-responsive"> 
+									<img alt="" src="/One_page/images/portfolio/vign1.png" class="img-responsive"> 
 								</section>
 								<div class="mediaHover">
 									<div class="mask"></div>
 									<div class="iconLinks">
-										<a href="portfolio-project-fullwidth-image.html" title="link" class="sizer portfolioSheet">
+										<a href="Law01.html" title="link" class="sizer portfolioSheet">
 											<i class="icon-picture iconRounded iconBig"></i>
 											<span>link</span>
-										</a>
-										<a href="images/portfolio/zoom8.jpg" class="image-link" title="Zoom" >
-											<i class="icon-search iconRounded iconBig"></i>
-											<span>zoom</span>
 										</a>
 									</div>
 								</div>
@@ -488,18 +471,14 @@
 
 							<article class="col-sm-4 isotopeItem proc">
 								<section class="imgWrapper"> 
-									<img alt="" src="/One_page/images/portfolio/vign5.jpg" class="img-responsive"> 
+									<img alt="" src="/One_page/images/portfolio/vign1.png" class="img-responsive"> 
 								</section>
 								<div class="mediaHover">
 									<div class="mask"></div>
 									<div class="iconLinks">
-										<a href="portfolio-project-fullwidth-image.html" title="link" class="sizer portfolioSheet">
+										<a href="Law01.html" title="link" class="sizer portfolioSheet">
 											<i class="icon-picture iconRounded iconBig"></i>
 											<span>link</span>
-										</a>
-										<a href="images/portfolio/zoom5.jpg" class="image-link" title="Zoom" >
-											<i class="icon-search iconRounded iconBig"></i>
-											<span>zoom</span>
 										</a>
 									</div>
 								</div>
@@ -513,20 +492,17 @@
 
 							<article class="col-sm-4 isotopeItem proc">
 								<section class="imgWrapper"> 
-									<img alt="" src="/One_page/images/portfolio/vign9.jpg" class="img-responsive"> 
+									<img alt="" src="/One_page/images/portfolio/vign1.png" class="img-responsive"> 
 								</section>
 								<div class="mediaHover">
 									<div class="mask"></div>
 									<div class="iconLinks">
-										<a href="portfolio-project-fullwidth-carousel.html" title="link" class="sizer portfolioSheet">
-											<i class="icon-camera iconRounded iconBig"></i>
+										<a href="Law01.html" title="link" class="sizer portfolioSheet">
+											<i class="icon-picture iconRounded iconBig"></i>
 											<span>link</span>
 										</a>
-										<a href="images/portfolio/zoom9.jpg" class="image-link" title="Zoom">
-											<i class="icon-search iconRounded iconBig"></i>
-											<span>zoom</span>
-										</a> </div>
 									</div>
+								</div>
 									<section class="boxContent">
 										<h3>各地區公所</h3>
 										<p>民國106年度全國各縣市中低收入戶財產限制規則<br><br><br><br>
