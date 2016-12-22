@@ -26,6 +26,29 @@ class Boy_model extends CI_Model {
 		return $query;
 	}
 
+	/*
+	* get the 最新案件流水號 by 姓名,身分證字號,役男生日
+	*	if found, return 最新案件流水號
+	*	if not found, return an empty string ''
+	*/
+	public function get_filekey($name, $id, $birthday){
+		$condition= array(
+			'役男姓名' => $name,
+			'身分證字號' => $id,
+			'役男生日' => $birthday,
+			);
+		$this->db->select('最新案件流水號');
+		$this->db->from('miliboy_table');
+		$this->db->where($condition);
+		$query = $this->db->get();
+		$row = $query->row_array();
+		if (isset($row)){
+			return $row['最新案件流水號'];
+		}else{
+			return '';
+		}			
+	}
+	
 	public function add_new_boy($name, $id, $birthday, $begin_date, $mili_type, $mili_status){
 		$data = array(
 			'役男姓名' => $name,
@@ -47,5 +70,6 @@ class Boy_model extends CI_Model {
 		$this->db->where('役男系統編號', $boy_key);
 		$this->db->update('miliboy_table', $data);
 	}
+
 
 }

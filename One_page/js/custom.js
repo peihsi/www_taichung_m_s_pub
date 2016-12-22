@@ -1005,6 +1005,49 @@ jQuery(function() {
     });
   }
 
+    if( jQuery("#queryfrm").length ){
+
+      jQuery("#queryfrm").validate({
+        // debug: true,
+        errorPlacement: function(error, element) {
+            error.insertBefore( element );
+        },
+        submitHandler: function(form) {
+            $(form).ajaxSubmit({
+              target: ".queryresult",
+              success: function(){
+                if($('.queryresult .alert-success').length){
+                    $("#queryfrm").trigger('reset');
+                }
+              }
+          });
+        },
+        onkeyup: false,
+        onclick: false,
+        highlight: function (element) {
+        $(element).closest('.form-group').addClass('has-error');
+        },
+        errorElement: "div",
+        success: function (element) {
+        element.closest('.form-group').removeClass('has-error');
+        },
+        rules: {
+            q_name: {
+                required: true,
+                minlength: 2
+            },
+            q_id: {
+                required: true,
+                minlength: 10                
+            },
+            q_birthday: {
+                required: true,
+                dateISO: true
+            }            
+        }
+    });
+  }  
+
   if( jQuery("#projectQuote").length){
 
       jQuery("#projectQuote").validate({
@@ -1044,9 +1087,6 @@ jQuery(function() {
 
         }
     });
-
-
-
   }
 
 });

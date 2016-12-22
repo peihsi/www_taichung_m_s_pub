@@ -813,38 +813,27 @@
 										615.987.1234<br/>
 									</address>
 								</div>
-								<form method="post" action="index.php/formhandler/newfile" id="contactfrm" role="form">
+								<form method="post" action="index.php/formhandler/queryprogress" id="queryfrm" role="form">
 
 									<div class="col-sm-4"> 
 										<div class="form-group">
-											<label for="name">役男姓名</label>
-											<input type="text" class="form-control" name="name" id="name" placeholder="姓名"  title="請輸入姓名(至少2個字)"/>
+											<label for="q_name">役男姓名</label>
+											<input type="text" class="form-control" name="q_name" id="q_name" placeholder="姓名"  title="請輸入姓名(至少2個字)"/>
 										</div>
 										<div class="form-group">
-											<label for="id">身分證字號</label>
-											<input type="text" class="form-control" name="id" id="id" placeholder="身分證字號"  title="請輸入正確的身分證字號"/>
-										</div>
-										<div class="form-group">
-											<label for="birthday">出生年月日</label>
-											<input type="text" class="form-control" name="birthday" id="birthday" placeholder="yyyy-mm-dd"  title="請輸入出生年月日，格式: yyyy-mm-dd"/>
-										</div>
+											<label for="q_id">身分證字號</label>
+											<input type="text" class="form-control" name="q_id" id="q_id" placeholder="身分證字號"  title="請輸入正確的身分證字號"/>
+										</div>										
 									</div>
 									<div class="col-sm-4">
 										<div class="form-group">
-											<label for="phone">連絡電話</label>
-											<input type="tel" class="form-control" name="phone" id="phone" placeholder="連絡電話" title="請輸入連絡電話">
-										</div>																		
-										<fieldset class="clearfix securityCheck">
-											<legend>驗證碼</legend>
-											<div class="form-group">
-												<img src="/One_page/js-plugin/neko-contact-ajax-plugin/php/image.php" alt="Image verification" id="verifyImg"/>
-												<input class="required form-control" id="verify" name="verify" type="text" title="請輸入驗證碼">
-											</div>
-										</fieldset>
-									</div>                        
+											<label for="q_birthday">出生年月日</label>
+											<input type="text" class="form-control" name="q_birthday" id="q_birthday" placeholder="yyyy-mm-dd"  title="請輸入出生年月日，格式: yyyy-mm-dd"/>
+										</div>										
+									</div>                    
 									<div class="col-md-8 col-md-offset-4" style="margin-bottom: 5em;">
-										<div class="result"></div>
-										<button name="submit" type="submit" class="btn btn-lg" id="submit"> 送出查詢</button>
+										<div class="queryresult"></div>
+										<button name="querysubmit" type="submit" class="btn btn-lg" id="querysubmit"> 送出查詢</button>
 										<br>
 									</div>
 								</form>
