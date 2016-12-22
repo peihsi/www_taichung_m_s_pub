@@ -6,7 +6,7 @@ class File_model extends CI_Model {
     }
 
 	/*
-	*	add a 初審案件
+	*	add a 民眾線上申請的，初審案件
 	*/
 	public function add_new_file($today, $id, $county, $town, $village, $address, $email, $phone){		
 		$data = array(
@@ -19,11 +19,15 @@ class File_model extends CI_Model {
 			'戶籍地址' => $address,
 			'email' => $email,
 			'聯絡電話1' => $phone,
-			'審批階段' => 1
+			'審批階段' => 0
 			);
 		$this->db->insert('files_info_table', $data);
 		$index = $this->db->insert_id();
 		log_message('debug', 'file table insert_id = '. $index);
 		return $index;
+	}
+
+	public function get_status($file_key){
+		return "民眾線上申請";
 	}
 }

@@ -46,7 +46,23 @@ class Formhandler extends CI_Controller {
 			$file_key = $this->file_model->add_new_file($today, $boy_key, $county, $town, $village, $address, $email, $phone);
 		
 			$this->boy_model->update_new_boy_file_link($boy_key, $file_key);
-			echo '<div class="alert alert-success">役男資料新增成功</div>';			
+			$msg = "役男 [$name] 扶助案，線上登記成功！請攜帶證明文件前往戶籍所在區公所辦理。";
+			echo '<div class="alert alert-success">'.$msg.'</div>';			
 		}			
+	}
+
+	public function queryprogress(){
+		$name = $this->input->post('q_name');
+		$id = $this->input->post('q_id');
+		$birthday = $this->input->post('q_birthday');
+		
+		$file_key = $this->boy_model->get_filekey($name, $id, $birthday);
+		if (empty($file_key)){
+			echo '<div class="alert alert-danger">此役男資料不存在！</div>';
+		}else{
+			$status = $this->file_model->get_status($file_key);
+			$msg = "役男 $name $id (生日:$birthday) 之扶助案，進度為 ". $status;
+			echo '<div class="alert alert-success">'.$msg.'</div>';			
+		}
 	}
 }
