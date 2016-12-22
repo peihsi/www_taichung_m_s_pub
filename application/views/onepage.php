@@ -66,7 +66,17 @@
     			white-space: pre-wrap;  
 			}
 			.mask {
-    			background-color: rgba(67, 182, 177, 0.41);
+    			background-color: transparent/*rgba(67, 182, 177, 0.41)*/;
+			}
+
+			#works article:hover .img-responsive{
+				filter: brightness(155%) contrast(80%);
+    			transition: 0.3s;
+			}
+			.imgWrapper{
+				background-color: #e6f1f1;
+				border-radius: 10px;
+    			box-shadow: 1px 1px 10px grey;
 			}
 		</style>
 	</head>
@@ -183,7 +193,7 @@
 								</div>		
 							</div>
 							<div class="col-md-4 hidden-xs">
-								<img src="/One_page/images/theme-pics/confert2.png" alt="Ashley, Bootstrap website template" class="img-responsive">
+								<img src="/One_page/images/theme-pics/confert2.png" style="position: relative;top: 10px;" alt="Ashley, Bootstrap website template" class="img-responsive">
 							</div>
 						</div>
 					</div>
@@ -243,22 +253,6 @@
 						</div>
 						<hr>
 						<div class="row">
-							<!--<div class="col-md-12 col-sm-12" style="text-align: center;">
-							<br><br><br>
-								<img style="zoom: 0.5;" id="Image-Maps-Com-image-maps-2016-12-21-231457" src="http://www.image-maps.com/m/private/0/95i2qn9uoq3kucgfds7ivnu3s6_ilovepdf_com-1.png" border="0" width="2043" height="2301" orgWidth="2043" orgHeight="2301" usemap="#image-maps-2016-12-21-231457" alt="" />
-<map name="image-maps-2016-12-21-231457" id="ImageMapsCom-image-maps-2016-12-21-231457">
-<area id="M1" alt="" title="" shape="rect" coords="430,464,849,625" style="outline:none;" target="_self"  data-toggle="popover" title="Popover title" data-content="And here's some amazing content. It's very engaging. Right?"    />
-<area id="M3" alt="" title="" href="http://www.image-maps.com/" shape="rect" coords="468,1153,847,1383" style="outline:none;" target="_self"     />
-<area id="M4" alt="" title="" href="http://www.image-maps.com/" shape="rect" coords="542,1541,772,1659" style="outline:none;" target="_self"     />
-<area id="M5" alt="" title="" href="http://www.image-maps.com/" shape="rect" coords="466,1767,848,1948" style="outline:none;" target="_self"     />
-<area id="M6" alt="" title="" href="http://www.image-maps.com/" shape="rect" coords="390,2045,921,2295" style="outline:none;" target="_self"     />
-<area id="M2.1" alt="" title="" href="http://www.image-maps.com/" shape="rect" coords="954,855,1333,1047" style="outline:none;" target="_self"     />
-<area id="M2.3" alt="" title="" href="http://www.image-maps.com/" shape="rect" coords="1405,1233,1860,1425" style="outline:none;" target="_self"     />
-<area shape="rect" coords="2041,2299,2043,2301" alt="Image Map" style="outline:none;" title="Image Map" href="http://www.image-maps.com/index.php?aff=mapped_users_0" />
-<area id="M2" alt="" title="" href="http://www.image-maps.com/" shape="poly" coords="655,862,472,953,657,1046,842,954" style="outline:none;" target="_self"     />
-<area id="M2.2" alt="" title="" href="http://www.image-maps.com/" shape="poly" coords="1613,825,1408,973,1615,1123,1819,973" style="outline:none;" target="_self"     />
-</map>
-							</div>-->
 							<br><br><br>
 							<div class="col-md-12 col-sm-12" style="text-align: center;">
 								<img style="width: 100%" id="Image-Maps-Com-image-maps-2016-12-21-231457" src="/One_page/images/ilovepdf_com (white).png">
@@ -321,9 +315,9 @@
 								<div class="mediaHover">
 									<div class="mask"></div>
 									<div class="iconLinks"> 
-										<a href="Law01.html" title="link" class="sizer portfolioSheet">
+										<a href="info-01.html" title="link" class="sizer portfolioSheet">
 											<i class="icon-zoom-in-outline iconRounded iconBig"></i>
-											<span>詳情</span>
+											<span>更多資訊</span>
 										</a> 
 									</div>
 								</div>
@@ -344,9 +338,9 @@
 								<div class="mediaHover">
 									<div class="mask"></div>
 									<div class="iconLinks"> 
-										<a href="Law01.html" title="link" class="sizer portfolioSheet">
+										<a href="info-property-limit.html" title="link" class="sizer portfolioSheet">
 											<i class="icon-zoom-in-outline iconRounded iconBig"></i>
-											<span>詳情</span>
+											<span>更多資訊</span>
 										</a>  
 										<!--<a href="http://www.youtube.com/watch?v=aqrtF7L86NQ" class="image-iframe" title="Video Popup" >
 											<i class="icon-search iconRounded iconBig"></i>
@@ -369,9 +363,9 @@
 								<div class="mediaHover">
 									<div class="mask"></div>
 									<div class="iconLinks"> 
-										<a href="Law01.html" title="link" class="sizer portfolioSheet">
+										<a href="info-03.html" title="link" class="sizer portfolioSheet">
 											<i class="icon-videocam iconRounded iconBig"></i>
-											<span>link</span>
+											<span>更多資訊</span>
 										</a> 
 									</div>
 								</div>
@@ -390,15 +384,15 @@
 								<div class="mediaHover">
 									<div class="mask"></div>
 									<div class="iconLinks"> 
-										<a href="Law01.html" title="link" class="sizer portfolioSheet">
-											<i class="icon-camera iconRounded iconBig"></i>
-											<span>link</span>
+										<a href="info-income-limit.html" title="link" class="sizer portfolioSheet">
+											<i class="icon-clipboard iconRounded iconBig"></i>
+											<span>更多資訊</span>
 										</a> 
 									</div>
 								</div>
 								<section class="boxContent">
 									<h3>各縣市中低收入戶所得限制</h3>
-									<p>民國106年度全國各縣市中低收入戶財產限制規則<br><br><br><br>
+									<p>民國106年度全國各縣市中低收入戶所得標準<br><br><br><br>
 										<!--<a href="portfolio-project-fullwidth-video.html" class="moreLink portfolioSheet">&rarr; read more</a>-->
 									</p>
 								</section>
@@ -411,7 +405,7 @@
 									<div class="mask"></div>
 									<div class="iconLinks">
 										<a href="Law01.html" title="link" class="sizer portfolioSheet"> <i class="icon-picture iconRounded iconBig"></i>
-											<span>link</span>
+											<span>更多資訊</span>
 										</a>
 									</div>
 								</div>
@@ -433,15 +427,15 @@
 								<div class="mediaHover">
 									<div class="mask"></div>
 									<div class="iconLinks">
-										<a href="Law01.html" title="link" class="sizer portfolioSheet">
+										<a href="info-stock.html" title="link" class="sizer portfolioSheet">
 											<i class="icon-picture iconRounded iconBig"></i>
-											<span>link</span>
+											<span>更多資訊</span>
 										</a>
 									</div>
 								</div>
 								<section class="boxContent">
-									<h3>家屬資格認定</h3>
-									<p>民國106年度全國各縣市中低收入戶財產限制規則<br><br><br><br>
+									<h3>104年度股票配息參考對照</h3>
+									<p>股票屬於動產的一種，股票配息枝財稅資料將影響到本金價值之計算與認定<br><br><br><br>
 										<!--<a href="portfolio-project-fullwidth-video.html" class="moreLink portfolioSheet">&rarr; read more</a>-->
 									</p>
 								</section>
@@ -455,9 +449,9 @@
 								<div class="mediaHover">
 									<div class="mask"></div>
 									<div class="iconLinks">
-										<a href="Law01.html" title="link" class="sizer portfolioSheet">
+										<a href="info-process.html" title="link" class="sizer portfolioSheet">
 											<i class="icon-picture iconRounded iconBig"></i>
-											<span>link</span>
+											<span>更多資訊</span>
 										</a>
 									</div>
 								</div>
@@ -476,9 +470,9 @@
 								<div class="mediaHover">
 									<div class="mask"></div>
 									<div class="iconLinks">
-										<a href="Law01.html" title="link" class="sizer portfolioSheet">
+										<a href="process01.html" title="link" class="sizer portfolioSheet">
 											<i class="icon-picture iconRounded iconBig"></i>
-											<span>link</span>
+											<span>更多資訊</span>
 										</a>
 									</div>
 								</div>
@@ -497,15 +491,15 @@
 								<div class="mediaHover">
 									<div class="mask"></div>
 									<div class="iconLinks">
-										<a href="Law01.html" title="link" class="sizer portfolioSheet">
+										<a href="process02.html" title="link" class="sizer portfolioSheet">
 											<i class="icon-picture iconRounded iconBig"></i>
-											<span>link</span>
+											<span>更多資訊</span>
 										</a>
 									</div>
 								</div>
 									<section class="boxContent">
 										<h3>各地區公所</h3>
-										<p>民國106年度全國各縣市中低收入戶財產限制規則<br><br><br><br>
+										<p>臺中市各區公所聯絡資訊<br><br><br><br>
 										<!--<a href="portfolio-project-fullwidth-video.html" class="moreLink portfolioSheet">&rarr; read more</a>-->
 									</p>
 									</section>

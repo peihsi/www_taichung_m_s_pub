@@ -157,9 +157,16 @@
 	
 	// Close the pageslide
 	$.pageslide.close = function( callback ) {
-            var $pageslide = $('#pageslide'),
-            slideWidth = $pageslide.outerWidth( true ) - 17,
-            speed = $pageslide.data( 'speed' ),
+            var $pageslide = $('#pageslide');
+			//-----大致解決手機瀏覽器上，連續返回多次後，會逐漸偏移的問題
+			var win_width = $( window ).width();
+            if(win_width > 768){
+				var slideWidth = $pageslide.outerWidth( true ) - 17;
+			}else{
+				var slideWidth = $pageslide.outerWidth( true ) ;
+			}
+			//----------------------------------------------------------------
+            var speed = $pageslide.data( 'speed' ),
             bodyAnimateIn = {},
             slideAnimateIn = {}
             	        
