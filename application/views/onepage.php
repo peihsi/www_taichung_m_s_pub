@@ -751,7 +751,7 @@
 												<option value="66000280">大里區</option>
 												<option value="66000290">和平區</option>
 											</select>
-											<select class="form-control" name="village" id="village" style="width: 32.3333%;display: inline;">
+											<select class="form-control" name="village" id="village" style="width: 32.3333%;display: inline;    margin-bottom: 5px;">
 												<option value="6938">繼光里</option>
 												<option value="6939">大墩里</option>
 												<option value="6940">綠川里</option>
