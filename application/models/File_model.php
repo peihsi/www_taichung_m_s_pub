@@ -27,7 +27,23 @@ class File_model extends CI_Model {
 		return $index;
 	}
 
+	/**
+	* get 案件階段名稱 by the given 案件流水號
+	*/
 	public function get_status($file_key){
-		return "民眾線上申請";
+		$status_name = '';
+
+		$this->db->select('*');
+		$this->db->from('files_info_table');
+		$this->db->join('files_status_code','files_info_table.審批階段 = files_status_code.審批階段代號','left');
+		$this->db->where('案件流水號', $file_key);
+
+		$row = $this->db->get()->row_array();		
+
+		if (isset($row)){
+			$status_name = $row['案件階段名稱'];
+		}
+		log_message('debug', 'last query = '.print_r($this->db->last_query(), true));
+		return $status_name;	
 	}
 }
