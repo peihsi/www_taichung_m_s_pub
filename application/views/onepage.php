@@ -435,7 +435,7 @@
 								</div>
 								<section class="boxContent">
 									<h3>104年度股票配息參考對照</h3>
-									<p>股票屬於動產的一種，股票配息枝財稅資料將影響到本金價值之計算與認定<br><br><br><br>
+									<p>股票屬於動產的一種，股票配息枝財稅資料將影響到本金價值之計算與認定<br><br><br>
 										<!--<a href="portfolio-project-fullwidth-video.html" class="moreLink portfolioSheet">&rarr; read more</a>-->
 									</p>
 								</section>
