@@ -10,7 +10,7 @@
 		================================================== -->
 		<meta charset="utf-8">
 		<title>臺中市役男家屬扶助資訊網</title>
-		<meta name="description" content="Ashley is a One Page Bootstrap 3 Premium website Template, using nice Paralax effect, HTML5, CSS3 and Twitter Bootstrap 3">
+		<meta name="description" content="臺中市 役男 服役 當兵 家屬 生活扶助 申請 資訊">
 		<meta name="author" content="Little NEKO">
 		<!-- Mobile Specific Metas
 		================================================== -->
