@@ -944,11 +944,13 @@ jQuery(function() {
             error.insertBefore( element );
         },
         submitHandler: function(form) {
+            CWait_Start();
             $(form).ajaxSubmit({
               target: ".result",
               success: function(){
               	if($('.result .alert-success').length){
               		$("#contactfrm").trigger('reset');
+                    CWait_End();
 
               	}
               }

@@ -46,4 +46,24 @@ class File_model extends CI_Model {
 		log_message('debug', 'last query = '.print_r($this->db->last_query(), true));
 		return $status_name;	
 	}
+	
+	public function progress_log($file_key,$log_comment, $progress_name, $progress_level,$organization,$department,$FullName,$User_Level,$datetime){
+		$data = array(
+			'案件流水號' => $file_key,
+			'動作者意見' => $log_comment,
+			'動作名稱' => $progress_name,
+			'動作後案件流程層級' => $progress_level,
+			'動作者' => $FullName,
+			'動作者單位' => $department,
+			'動作者機關' => $organization,
+			'動作者職級' => $User_Level,
+			'日期時間' => $datetime
+			);
+		$this->db->insert('files_process_log', $data);
+		$index = $this->db->insert_id();
+		log_message('debug', 'file table insert_id = '. $index);
+
+		return $index;
+
+	}
 }

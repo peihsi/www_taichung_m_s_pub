@@ -78,6 +78,48 @@
 				border-radius: 10px;
     			box-shadow: 1px 1px 10px grey;
 			}
+			#cortana_wait {
+			    position: fixed;
+			    top: 0;
+			    left: 0;
+			    right: 0;
+			    bottom: 0;
+			    z-index: 10000;
+			    text-align: center;
+			    background: rgba(128, 128, 128, 0.8);
+			}
+			#cortana_wait_cont {
+			    height: 5rem;
+			    position: relative;
+			    display: inline-flex;
+			    top: calc(50vh - 2.5rem);
+			    background-color: black;
+			    padding: 1rem;
+			    box-sizing: content-box;
+			    border-radius: 1rem;
+			    box-shadow: 0.1rem 0.1rem 1rem black;
+			    border: 0.2rem solid gray;
+			    color: #c2c2c2;
+			}
+			#cortana_wait_icon {
+			    display: inline-block;
+			    width: 5rem;
+			    height: 100%;
+			    left: calc(0%);
+			    background-image: url(/One_page/images/cortana_wait.gif);
+			    background-position: 50% 70%;
+			    background-size: 150%;
+			    float: left;
+			}
+			#cortana_wait_msg {
+			    display: inline-block;
+			    font-size: 3rem;
+			    line-height: 5rem;
+			    background: inherit;
+			    height: 100%;
+			    float: left;
+			    padding-left: 1rem;
+			}
 		</style>
 	</head>
 	<body data-spy="scroll" data-target="#scrollTarget" data-offset="150" id="fullScreen">
@@ -86,6 +128,11 @@
 			<div id="status">
 				<img src="/One_page/images/theme-pics/loader.gif" alt=""/><h1 class="noSubtitle">系統載入中</h1>
 			</div>
+		</div>
+		<div id="cortana_wait" style="display: none;">
+		    <div id="cortana_wait_cont">
+		        <div id="cortana_wait_icon"></div><div id="cortana_wait_msg">與系統連線中...</div>
+		    </div>
 		</div>
 		<!-- Preloader -->
 		<!-- Primary Page Layout 
@@ -548,7 +595,7 @@
 										<select name="home_property" class="form-control required digits" type="tel" id="home_property" size="1" value="" placeholder="應被排除之家屬人數" title="請輸入應被排除之家屬人數"><option>請選擇</option><option value="Y">超過</option><option value="N">未超過</option></select>
 									</div>
 									<div class="form-group collapse" aria-expanded="false" style="height: 0px;">
-										<label for="home_immproperty">家庭全部不動產有超過<span>5280,000</span>元嗎?</label>
+										<label for="home_immproperty">家庭全部不動產有超過<span>3,520,000</span>元(臺中市)嗎?</label>
 										<P>以政府公告之房屋現值及土地公告現值計算，自用住宅與其土地不用計入</P>
 										<select name="home_immproperty" class="form-control required digits" type="tel" id="home_immproperty" size="1" value="" placeholder="應被排除之家屬人數" title="請輸入應被排除之家屬人數"><option>請選擇</option><option value="Y">超過</option><option value="N">未超過</option></select>
 									</div>

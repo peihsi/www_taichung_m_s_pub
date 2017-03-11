@@ -46,8 +46,10 @@ class Formhandler extends CI_Controller {
 			$file_key = $this->file_model->add_new_file($today, $boy_key, $county, $town, $village, $address, $email, $phone);
 		
 			$this->boy_model->update_new_boy_file_link($boy_key, $file_key);
+			$this->log_activity("民眾自行線上登記案件", "file_key=$file_key");
+			$this->progress_log($file_key);
 			$msg = "役男 [$name] 扶助案，線上登記成功！請攜帶證明文件前往戶籍所在區公所辦理。";
-			echo '<div class="alert alert-success">'.$msg.'</div>';			
+			echo '<div class="alert alert-success">'.$msg.'</div>';
 		}			
 	}
 
@@ -64,5 +66,29 @@ class Formhandler extends CI_Controller {
 			$msg = "役男 $name $id (生日:$birthday) 之扶助案，進度為 ". $status;
 			echo '<div class="alert alert-success">'.$msg.'</div>';			
 		}
+	}
+
+	protected function log_activity($activity1="", $activity2="", $activity3=""){
+
+		//$this->load->library('session');
+		$log['user_id'] = ""; //varchar 20
+		$log['full_name'] = ""; //varchar 20
+		$log['organization'] = ""; //varchar 20
+		$log['department'] 	= ""; //varchar 20
+
+		$log['activity1']		= $activity1;
+		$log['activity2']		= $activity2;
+		$log['activity3']		= $activity3;
+
+		$log['date_time'] 	= date('Y-m-d H:i:s', time());
+		$log['ip'] 			= $this->input->ip_address();
+		
+		$this->load->model('activitylog_model');
+		$this->activitylog_model->add($log);
+	}
+
+	protected function progress_log($file_key){		
+		$datetime = date ("Y-m-d H:i:s"); 
+		$this->file_model->progress_log($file_key,"", "民眾線上申請", 0,"","","民眾",0,$datetime);
 	}
 }

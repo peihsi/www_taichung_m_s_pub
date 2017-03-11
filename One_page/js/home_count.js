@@ -56,10 +56,10 @@ $(document).ready(function() {
 		$("#home_result").parents('div').eq(0).collapse('show');
 
 		if($("#home_property").val() == "N" && $("#home_immproperty").val() == "N" && $("#home_income").val() == "N"){
-			$("#home_result").text('貴戶可能符合申請，您可向役男戶籍地區公所提出線上登記。');
+			$("#home_result").html('貴戶可能符合申請，您可向役男戶籍地區公所提出線上登記。<br>注意!本試算僅作參考，實際審核結果將依財稅資料與相關法規依據為主!');
 		}
 		else{
-			$("#home_result").text('貴戶似乎不符合申請條件，但您仍可向役男戶籍地區公所提出線上登記。');
+			$("#home_result").html('貴戶似乎不符合申請條件，但您仍可向役男戶籍地區公所提出線上登記。<br>注意!本試算僅作參考，實際審核結果將依財稅資料與相關法規依據為主!');
 		}
 		
 		//$("#home_income").parents('div').eq(0).find('label > span').text(13084*($("#home_members").val() - $("#home_not_members").val()));
@@ -115,3 +115,29 @@ $(document).ready(function() {
 //home_page2
 	
 });
+	var CWait_interrupt = 0;
+	function CWait_Start(wait_time, msg){
+        //為了相容於舊版JS引擎，參數預設值改成在內部定義
+        wait_time = typeof wait_time !== 'undefined' ? wait_time : 1000;
+        msg = typeof msg !== 'undefined' ? msg : "與系統連線中...";
+        //...........................................
+        setTimeout(function(){
+            if(!CWait_interrupt){
+                $("#cortana_wait").fadeIn();
+                $("#cortana_wait_msg").text(msg);
+            }
+            CWait_interrupt = 0;
+        },wait_time);        
+    }
+    function CWait_End(wait_time){
+        //為了相容於舊版JS引擎，參數預設值改成在內部定義
+        wait_time = typeof wait_time !== 'undefined' ? wait_time : 0;
+        //...........................................
+        setTimeout(function(){
+            CWait_interrupt = 1;
+            $("#cortana_wait").stop().fadeOut();
+        },wait_time);
+        setTimeout(function(){
+            CWait_interrupt = 0;
+        },1050);
+    }
