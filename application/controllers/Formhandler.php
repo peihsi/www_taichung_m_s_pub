@@ -48,7 +48,8 @@ class Formhandler extends CI_Controller {
 			$this->boy_model->update_new_boy_file_link($boy_key, $file_key);
 			$this->log_activity("民眾自行線上登記案件", "file_key=$file_key");
 			$this->progress_log($file_key);
-			$msg = "役男 [$name] 扶助案，線上登記成功！請攜帶證明文件前往戶籍所在區公所辦理。";
+			$msg = "役男 [$name] 扶助案，線上登記成功！請攜帶證明文件前往戶籍所在區公所辦理。<br>
+					請填寫<a href='https://goo.gl/forms/3EWzF30XXThZyXU83' target='_blank' style='color: #d22121;'>線上問卷</a>，協助我們做出改進並提供更好的服務。";
 			echo '<div class="alert alert-success">'.$msg.'</div>';
 		}			
 	}

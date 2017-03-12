@@ -944,13 +944,13 @@ jQuery(function() {
             error.insertBefore( element );
         },
         submitHandler: function(form) {
-            CWait_Start();
+            CWait_Start();                  //加入等待動畫
             $(form).ajaxSubmit({
               target: ".result",
               success: function(){
               	if($('.result .alert-success').length){
               		$("#contactfrm").trigger('reset');
-                    CWait_End();
+                    CWait_End();            //結束等待動畫
 
               	}
               }
