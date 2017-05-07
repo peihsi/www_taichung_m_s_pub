@@ -11,7 +11,7 @@
 		<meta charset="utf-8">
 		<title>臺中市役男家屬扶助資訊網</title>
 		<meta name="description" content="臺中市 役男 服役 當兵 家屬 生活扶助 申請 資訊">
-		<meta name="author" content="Little NEKO">
+		<meta name="author" content="標竿數位文化工作室">
 		<!-- Mobile Specific Metas
 		================================================== -->
 		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
@@ -41,11 +41,11 @@
 		<script src="/One_page/js/modernizr-2.6.1.min.js"></script>
 		<!-- Favicons
 		================================================== -->
-		<link rel="shortcut icon" href="/One_page/images/favicon.ico">
+		<!--<link rel="shortcut icon" href="/One_page/images/favicon.ico">
 		<link rel="apple-touch-icon" href="images/apple-touch-icon.png">
 		<link rel="apple-touch-icon" sizes="72x72" href="/One_page/images/apple-touch-icon-72x72.png">
 		<link rel="apple-touch-icon" sizes="114x114" href="/One_page/images/apple-touch-icon-114x114.png">
-		<link rel="apple-touch-icon" sizes="144x144" href="/One_page/images/apple-touch-icon-144x144.png">
+		<link rel="apple-touch-icon" sizes="144x144" href="/One_page/images/apple-touch-icon-144x144.png">-->
 		<style type="text/css">
 			h1, h2, h3, p, strong, div, a, a:link, a:visited  {
 				font-family: Microsoft JhengHei;
@@ -120,6 +120,26 @@
 			    float: left;
 			    padding-left: 1rem;
 			}
+			h2{
+				color: #212121;
+				font-weight: 600;
+			}
+
+			.Ref3x3{
+				padding: 1em;
+			    box-sizing: border-box;
+			    background: #e4ecf1;
+			    margin: 0.45em;
+			    width: calc(33.33333333% - 1em);
+			    border-radius: .5em;
+			    transition: 0.6s;
+			    cursor: pointer;
+			}
+			.Ref3x3:hover{
+				background: #389e70;
+			    color: white;
+			    text-decoration: none;
+			}
 		</style>
 	</head>
 	<body data-spy="scroll" data-target="#scrollTarget" data-offset="150" id="fullScreen">
@@ -140,15 +160,15 @@
 		<!-- globalWrapper -->
 		<div id="globalWrapper" class="localscroll">
 			<!-- header -->
-			<header id="mainHeader" class="navbar-fixed-top" role="banner">
+			<header id="mainHeader" class="navbar-fixed-top" role="banner" style="opacity: 1;transform: scaleY(1);">
 				<div class="container">
 					<nav class="navbar navbar-default scrollMenu" role="navigation">
 						<div class="navbar-header">
 							<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
-							<a class="navbar-brand" href="index-fullscreen.html"><img src="/One_page/images/main-logo.svg" alt="Ashley website template" style="width: 250px;"/></a> </div>
+							<a class="navbar-brand" href="index-fullscreen.html"><img src="/One_page/images/main-logo.svg" alt="臺中市役男家屬生活扶助網" style="width: 250px;"/></a> </div>
 							<div class="collapse navbar-collapse navbar-ex1-collapse" id="scrollTarget">
 								<ul class="nav navbar-nav pull-right">
-									<li class="active"><a href="#homeFullScreen"><i class="icon-home-outline"></i>首頁</a> </li>
+									<!--<li class="active"><a href="#homeFullScreen"><i class="icon-home-outline"></i>首頁</a> </li>-->
 									<li><a href="#about"><i class="icon-star"></i>扶助簡介</a> </li>
 									<li><a href="#services"><i class="icon-thumbs-up"></i>申請流程</a> </li>
 									<li><a href="#works"><i class="icon-popup-1"></i>參考資訊</a> </li>
@@ -164,6 +184,13 @@
 				</header>
 				<!-- header -->
 				<!-- content -->
+				<style type="text/css">
+					.flex-control-nav.flex-control-paging{
+						opacity: 0;
+					}
+				</style>
+				<!--關閉全幅首頁，否則切換頁時效能很差-->
+				<!--
 				<section id="homeFullScreen" data-stellar-background-ratio="0.5">
 					<div class="maskParent" >
 						<div class="paralaxMask"></div>
@@ -188,13 +215,13 @@
 							<a href="#about" class="homeBtn btn scrollLink"><i class="icon-down"></i>進入網站</a>
 						</div>
 					</div>
-				</section>
+				</section>-->
 				<!-- about us -->
-				<section class="slice noPaddingBottom" id="about">
+				<section class="slice noPaddingBottom" id="about"  data-stellar-background-ratio="0.5" style="padding-top: 8em;">
 					<div class="container">
 						<div class="row">
 							<div class="col-xs-12">
-								<h1>役男家屬扶助</h1>
+								<h1 style="font-weight: 600;">役男家屬生活扶助網</h1>
 								<h2 class="subTitle">對經濟弱勢役男家庭的各類服務幫助</h2>
 							</div>
 						</div>
@@ -202,7 +229,7 @@
 						<div class="row">
 							<div class="col-sm-4"> <img src="/One_page/images/theme-pics/talk.jpg" alt="services" class="img-responsive"> </div>
 							<div class="col-sm-4">
-								<h2 >法規精神</h2>
+								<h2>法規精神</h2>
 
 								<p>依法服役是每個役男應盡的國民義務。但為了避免部分經濟弱勢家庭因役男入伍服役而使家庭經濟陷入拮据困頓，政府特別制定了服兵役役男家屬生活扶助規定
 								</p>
@@ -213,18 +240,24 @@
 							</div>
 
 							<div class="col-sm-4">
-								<h2>申請辦法</h2>
+								<!--<h2>申請辦法</h2>
 								<p> 役男入伍後一個月，家屬即可向役男戶籍地區公所提出扶助申請。</p>
-								<br>
-								<h2>哪些人算是役男的家屬</h2>
-								<p>家屬是指役男之配偶及民法第1114條與役男互負扶養義務之親屬。前項家屬除配偶、直系血親及兄弟姊妹外，以役男服役前1年經戶籍登記持續為同戶生活者為限。</p>
+								<br>-->
+								<h2>家屬認定</h2>
+								<p>本辦法所稱服兵役役男（以下簡稱役男），指應徵（召）集在營（勤）服兵役義務役人員。
+                                        本辦法所稱家屬，指役男之下列家庭成員：
+                                        <ul>
+                                        <li>直系血親及配偶。</li>
+                                        <li>兄弟姊妹。但有配偶或子女者，以與役男同居共營生活者為限。</li>
+                                        <li>於役男入營前一年持續為同一戶籍或同址分戶，且同居共營生活之三
+                                            親等內之血親、姻親及民法一千一百十四條第四款之親屬。</li></ul>(詳情請參照法規第2條)</p>
 							</div>
 						</div>
 						<div class="row">
 							<div class="col-xs-12 mt30">
 								<div class="alert alert-info alert-dismissable">
-									<button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
-									本業務的<strong>法規依據</strong>為服兵役役男家屬生活扶助實施辦法。　 <!--<a href="features.html" class="alert-link portfolioSheet">check them here</a>--><a href="Law01.html" class="alert-link portfolioSheet">參看法規條文</a><!--<a href="example01.html" class="alert-link portfolioSheet">check them here</a>-->
+									<!--<button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>-->
+									本項服兵役役男家屬生活扶助係依「<strong>服兵役役男家屬生活扶助實施辦法</strong>」辦理。　 <!--<a href="features.html" class="alert-link portfolioSheet">check them here</a>--><a href="Law01.html" class="alert-link portfolioSheet">參看法規條文</a><!--<a href="example01.html" class="alert-link portfolioSheet">check them here</a>-->
 
 								</div>
 							</div>
@@ -240,7 +273,7 @@
 								</div>		
 							</div>
 							<div class="col-md-4 hidden-xs">
-								<img src="/One_page/images/theme-pics/confert2.png" style="position: relative;top: 10px;" alt="Ashley, Bootstrap website template" class="img-responsive">
+								<img src="/One_page/images/theme-pics/confert2.png" style="position: relative;top: 10px;" alt="慰問" class="img-responsive">
 							</div>
 						</div>
 					</div>
@@ -248,11 +281,11 @@
 				<!-- about us -->
 
 				<!-- services -->
-				<section class="slice color4" id="services">
+				<section class="slice color4" id="services" style="Z-INDEX: 10;position: relative;">
 					<div class="container">
 						<div class="row">
 							<div class="col-xs-12">
-								<h1>申請流程說明</h1>
+								<h1 style="font-weight: 600;">申請流程說明</h1>
 								<h2 class="subTitle">概略申請流程與申辦時之應備文件</h2>
 							</div>
 						</div>
@@ -338,10 +371,10 @@
 				</div>
 
 				<section class="slice" id="works">
-					<div class="container clearfix">
+					<!--<div class="container clearfix">
 						<div class="row">
 							<div class="col-sm-12">
-								<h1>參考資訊</h1>
+								<h1 style="font-weight: 600;">參考資訊</h1>
 								<h2 class="subTitle">本扶助業務的各類參考資訊彙整</h2>
 							</div>
 							<nav id="filter" class="col-md-12 text-center">
@@ -355,6 +388,7 @@
 							</nav>
 						</div>
 						<div class="portfolio-items  isotopeWrapper clearfix imgHover row" id="3">
+
 							<article class="col-sm-4 isotopeItem women">
 								<section class="imgWrapper">
 									<img alt="" src="/One_page/images/portfolio/vign1.png" class="img-responsive">
@@ -372,8 +406,6 @@
 									<h3>安家費與三節慰問金</h3>
 									<p>
 										安家費與三節慰問金的發放標準 <br><br><br><br>
-
-										<!--<a href="portfolio-project-fullwidth-image.html" class="moreLink portfolioSheet">&rarr; read more</a>-->
 									</p>
 								</section>
 							</article>
@@ -389,16 +421,11 @@
 											<i class="icon-zoom-in-outline iconRounded iconBig"></i>
 											<span>更多資訊</span>
 										</a>  
-										<!--<a href="http://www.youtube.com/watch?v=aqrtF7L86NQ" class="image-iframe" title="Video Popup" >
-											<i class="icon-search iconRounded iconBig"></i>
-											<span>video</span>
-										</a>--> 
 									</div>   
 								</div>
 								<section class="boxContent">
 									<h3>各縣市中低收入戶財產限制</h3>
 									<p>民國106年度全國各縣市中低收入戶財產限制規則<br><br><br><br>
-										<!--<a href="portfolio-project-fullwidth-video.html" class="moreLink portfolioSheet">&rarr; read more</a>-->
 									</p>
 								</section>
 							</article>
@@ -419,7 +446,6 @@
 								<section class="boxContent">
 									<h3>各等級扶助標準</h3>
 									<p>民國106年度全國各縣市中低收入戶財產限制規則<br><br><br><br>
-										<!--<a href="portfolio-project-fullwidth-video.html" class="moreLink portfolioSheet">&rarr; read more</a>-->
 									</p>
 								</section>
 							</article>
@@ -440,10 +466,10 @@
 								<section class="boxContent">
 									<h3>各縣市中低收入戶所得限制</h3>
 									<p>民國106年度全國各縣市中低收入戶所得標準<br><br><br><br>
-										<!--<a href="portfolio-project-fullwidth-video.html" class="moreLink portfolioSheet">&rarr; read more</a>-->
 									</p>
 								</section>
 							</article>
+
 							<article class="col-sm-4 isotopeItem cats">
 								<section class="imgWrapper"> 
 									<img alt="" src="/One_page/images/portfolio/vign1.png" class="img-responsive"> 
@@ -459,11 +485,7 @@
 								<section class="boxContent">
 									<h3>完整法條參照</h3>
 									<p>民國106年度全國各縣市中低收入戶財產限制規則<br><br><br><br>
-										<!--<a href="portfolio-project-fullwidth-video.html" class="moreLink portfolioSheet">&rarr; read more</a>-->
 									</p>
-									<!--<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi vulputate nunc ut tellus sollicitudin placerat. <br>
-										<a href="portfolio-project-fullwidth-carousel.html" class="moreLink portfolioSheet">&rarr; read more</a> 
-									</p>-->
 								</section>
 							</article>
 
@@ -483,11 +505,9 @@
 								<section class="boxContent">
 									<h3>104年度股票配息參考對照</h3>
 									<p>股票屬於動產的一種，股票配息枝財稅資料將影響到本金價值之計算與認定<br><br><br>
-										<!--<a href="portfolio-project-fullwidth-video.html" class="moreLink portfolioSheet">&rarr; read more</a>-->
 									</p>
 								</section>
 							</article>
-
 
 							<article class="col-sm-4 isotopeItem proc">
 								<section class="imgWrapper"> 
@@ -505,7 +525,6 @@
 								<section class="boxContent">
 									<h3>申請與判定流程圖</h3>
 									<p>民國106年度全國各縣市中低收入戶財產限制規則<br><br><br><br>
-										<!--<a href="portfolio-project-fullwidth-video.html" class="moreLink portfolioSheet">&rarr; read more</a>-->
 									</p>
 								</section>
 							</article>
@@ -526,7 +545,6 @@
 								<section class="boxContent">
 									<h3>應備文件</h3>
 									<p>民國106年度全國各縣市中低收入戶財產限制規則<br><br><br><br>
-										<!--<a href="portfolio-project-fullwidth-video.html" class="moreLink portfolioSheet">&rarr; read more</a>-->
 									</p>
 								</section>
 							</article>
@@ -547,15 +565,32 @@
 									<section class="boxContent">
 										<h3>各地區公所</h3>
 										<p>臺中市各區公所聯絡資訊<br><br><br><br>
-										<!--<a href="portfolio-project-fullwidth-video.html" class="moreLink portfolioSheet">&rarr; read more</a>-->
 									</p>
 									</section>
 								</article>
 
 
-							</div>
 						</div>
-					</section>
+					</div>-->
+
+					<div class="container clearfix">
+						<div class="row">
+							<a class="col-sm-4 Ref3x3 portfolioSheet" href="info-01.html" title="link"><h3>安家費與三節慰問金</h3><p>安家費與三節慰問金的發放標準</p></a>
+							<a class="col-sm-4 Ref3x3 portfolioSheet" href="info-property-limit.html" title="link"><h3>各縣市中低收入戶財產限制</h3><p>106年度各縣市中低收入戶財產限制規則</p></a>
+							<a class="col-sm-4 Ref3x3 portfolioSheet" href="info-03.html" title="link"><h3>各等級扶助標準</h3><p>甲、乙、丙三級與不同役期之扶助標準</p></a>
+						</div>
+						<div class="row">
+							<a class="col-sm-4 Ref3x3 portfolioSheet" href="info-income-limit.html" title="link"><h3>各縣市低收入戶所得限制</h3><p>106年度低收入戶所得認定標準</p></a>
+							<a class="col-sm-4 Ref3x3 portfolioSheet" href="Law01.html" title="link"><h3>完整法條參照</h3><p>服兵役役男家屬生活扶助實施辦法</p></a>
+							<a class="col-sm-4 Ref3x3 portfolioSheet" href="info-stock.html" title="link"><h3>104年度股票配息參考對照</h3><p>股票、營利所得之認定</p></a>
+						</div>
+						<div class="row">
+							<a class="col-sm-4 Ref3x3 portfolioSheet" href="info-process.html" title="link"><h3>申請與判定流程圖</h3><p>服兵役役男家屬生活扶助實施辦法之作業流程</p></a>
+							<a class="col-sm-4 Ref3x3 portfolioSheet" href="process01.html" title="link"><h3>應備文件</h3><p>民眾申辦應具備之文件</p></a>
+							<a class="col-sm-4 Ref3x3 portfolioSheet" href="process02.html" title="link"><h3>各地區公所</h3><p>臺中市各區公所聯絡資訊<br></p></a>
+						</div>
+
+				</section>
 
 					<div id="paralaxSlice1" data-stellar-background-ratio="0.5">
 						<div class="maskParent">
@@ -570,17 +605,17 @@
 						<div class="container">
 							<div class="row">
 								<div class="col-xs-12">
-									<h1>線上試算</h1>
+									<h1 style="font-weight: 600;">線上試算</h1>
 									<h2 class="subTitle">協助您概略性的評估是否符合申請資格</h2>
 								</div>
 								<div class="col-sm-6 col-sm-offset-3" id="home_page1" style="transition: 1s;">
 									<div class="form-group">
-										<label for="home_members">家中人口數</label>
+										<label for="home_members">除役男外之家中人口數</label>
 										<input type="number" class="form-control" name="home_members" id="home_members" placeholder="輸入人數"  title="請輸入您的家庭成員數"/>
 									</div>
 									<div class="form-group collapse" aria-expanded="false" style="height: 0px;">
-										<p>前一項之家屬中，有幾人符合下列任一條件?(屬於應被排除家屬)<ul><li> 一、應徵（召）服兵役。但研發或產業訓儲替代役役男第三階段服役期間 之工作收入，應予列計。 </li><li>二、榮民領有院外就養生活費。</li><li>三、在學領有公費。</li><li>四、入獄服刑、因案遭受羈押或依法受拘禁。</li><li>五、失蹤經向警察機關報案協尋未獲達六個月以上。但遭遇特別災難失蹤 經證明者，不在此限。</li><li>六、經政府公費安置收容並負擔其全部費用。</li><li>七、尚未設有戶籍之非本國籍配偶或大陸地區配偶。</li><li>八、未共同生活且無扶養事實之特殊境遇單親家庭直系血親尊親屬。</li><li>九、未與單親家庭未成年子女共同生活、無扶養事實，且未行使、負擔其 對未成年子女權利義務之父或母。</li><li>十、因父母離異而未共同生活且無扶養事實之兄弟姐妹。</li><li>十一、因其他情形特殊，未履行扶養義務，致申請人生活陷於困境，經直 轄市、縣（市）主管機關訪視評估以役男家屬最佳利益考量，認定 以不列入應計算人口為宜。</li></ul></p>
-										<label for="home_not_members">應被排除之家屬人數</label>
+										<!--<p>前一項之家屬中，有幾人符合下列任一條件?(屬於應被排除家屬)<ul><li> 一、應徵（召）服兵役。但研發或產業訓儲替代役役男第三階段服役期間 之工作收入，應予列計。 </li><li>二、榮民領有院外就養生活費。</li><li>三、在學領有公費。</li><li>四、入獄服刑、因案遭受羈押或依法受拘禁。</li><li>五、失蹤經向警察機關報案協尋未獲達六個月以上。但遭遇特別災難失蹤 經證明者，不在此限。</li><li>六、經政府公費安置收容並負擔其全部費用。</li><li>七、尚未設有戶籍之非本國籍配偶或大陸地區配偶。</li><li>八、未共同生活且無扶養事實之特殊境遇單親家庭直系血親尊親屬。</li><li>九、未與單親家庭未成年子女共同生活、無扶養事實，且未行使、負擔其 對未成年子女權利義務之父或母。</li><li>十、因父母離異而未共同生活且無扶養事實之兄弟姐妹。</li><li>十一、因其他情形特殊，未履行扶養義務，致申請人生活陷於困境，經直 轄市、縣（市）主管機關訪視評估以役男家屬最佳利益考量，認定 以不列入應計算人口為宜。</li></ul></p>-->
+										<label for="home_not_members">應被排除之家屬人數...<span><說明></span></label>
 										<input type="number" class="form-control" name="home_not_members" id="home_not_members" placeholder="應被排除之家屬人數" title="請輸入應被排除之家屬人數"/>
 									</div>
 									<div class="form-group collapse" aria-expanded="false" style="height: 0px;">
@@ -590,22 +625,27 @@
 								</div>
 								<div class="col-sm-6 form-group collapse" id="home_page2" aria-expanded="false" style="height: 0px;"> 
 									<div class="form-group">
-										<label for="home_property">家庭全部總動產有超過<span>100,000</span>元嗎?</label>
-										<P>動產為全家人的存款本金、投資及有價證券按面額計算之合計</P>
+										<label for="home_property">家庭全部總動產有超過<span>100,000</span>元嗎?</label>...<span><說明></span>
+										<!--<P>動產為全家人的存款本金、投資及有價證券按面額計算之合計</P>-->
 										<select name="home_property" class="form-control required digits" type="tel" id="home_property" size="1" value="" placeholder="應被排除之家屬人數" title="請輸入應被排除之家屬人數"><option>請選擇</option><option value="Y">超過</option><option value="N">未超過</option></select>
 									</div>
 									<div class="form-group collapse" aria-expanded="false" style="height: 0px;">
-										<label for="home_immproperty">家庭全部不動產有超過<span>3,520,000</span>元(臺中市)嗎?</label>
-										<P>以政府公告之房屋現值及土地公告現值計算，自用住宅與其土地不用計入</P>
+										<label for="home_immproperty">家庭全部不動產有超過<span>3,520,000</span>元(臺中市)嗎?</label>...<span><說明></span>
+										<!--<P>以政府公告之房屋現值及土地公告現值計算，自用住宅與其土地不用計入</P>-->
 										<select name="home_immproperty" class="form-control required digits" type="tel" id="home_immproperty" size="1" value="" placeholder="應被排除之家屬人數" title="請輸入應被排除之家屬人數"><option>請選擇</option><option value="Y">超過</option><option value="N">未超過</option></select>
 									</div>
+									
+									
+								</div>
+								<div class="col-sm-offset-3 col-sm-6 form-group collapse" id="home_page3" aria-expanded="true" style="height: 0px;"> 
 									<br>
 									<br>
 									<div class="form-group collapse" aria-expanded="false" style="height: 0px;">
 										<label for="home_result">概算結果</label>
 										<div name="home_result" class="form-control required digits" type="tel" id="home_result" style="height: 10em;">貴戶可能符合</div>
-										<br><a class="btn btn-lg alert-link" href="#" id="show_form_bt">立刻登記</a>
+										<br><a class="btn btn-lg alert-link" href="#" id="show_form_bt" style="text-align: center;display: block;">立刻登記</a>
 									</div>
+	
 								</div>
 
 
@@ -682,7 +722,7 @@
 							<div class="row">
 
 								<div class="col-sm-12">
-									<h1 class="noSubtitle">扶助申請案-線上登記</h1>
+									<h1 class="noSubtitle" style="font-weight: 600;">扶助申請案-線上登記</h1>
 								</div>
 
 								<div class="col-sm-4">
@@ -694,7 +734,7 @@
 									</address>
 									<h4>電話:</h4>
 									<address>
-										615.987.1234<br/>
+										04-2217-7166<br/>
 									</address>
 								</div>
 								<form method="post" action="index.php/formhandler/newfile" id="contactfrm" role="form">
@@ -815,7 +855,7 @@
 						<div class="container">
 							<div class="row"><br>
 								<div class="col-sm-12">
-									<h1 class="noSubtitle">扶助申請案-辦理進度查詢</h1>
+									<h1 class="noSubtitle" style="font-weight: 600;">扶助申請案-辦理進度查詢</h1>
 								</div>
 
 								<div class="col-sm-4">
@@ -827,7 +867,7 @@
 									</address>
 									<h4>電話:</h4>
 									<address>
-										615.987.1234<br/>
+										04-2217-7166<br/>
 									</address>
 								</div>
 								<form method="post" action="index.php/formhandler/queryprogress" id="queryfrm" role="form">
@@ -909,7 +949,7 @@
 								</div>
 							</section>
 						</footer>
-					<section  id="footerRights">
+					<!--<section  id="footerRights">
 						<div class="container">
 							<div class="row">
 								<div class="col-sm-12 text-center">
@@ -918,9 +958,10 @@
 
 							</div>
 						</div>
-					</section>
+					</section>-->
 					<!-- End footer -->
 				</div>
+				<?php include('Law_1.php');?>
 				<!-- global wrapper -->
 		<!-- End Document 
 		================================================== -->

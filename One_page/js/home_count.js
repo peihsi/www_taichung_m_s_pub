@@ -48,12 +48,16 @@ $(document).ready(function() {
 		event.preventDefault();
 		$("#home_immproperty").parents('div').eq(0).collapse('show');
 		//$("#home_income").parents('div').eq(0).find('label > span').text(13084*($("#home_members").val() - $("#home_not_members").val()));
+		
 			
 	});
 
 	$("#home_immproperty").on('change', function(event) {
 		event.preventDefault();
 		$("#home_result").parents('div').eq(0).collapse('show');
+
+  		$("#home_page3").collapse('show');
+
 
 		if($("#home_property").val() == "N" && $("#home_immproperty").val() == "N" && $("#home_income").val() == "N"){
 			$("#home_result").html('貴戶可能符合申請，您可向役男戶籍地區公所提出線上登記。<br>注意!本試算僅作參考，實際審核結果將依財稅資料與相關法規依據為主!');

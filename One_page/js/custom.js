@@ -65,32 +65,34 @@ $(document).ready(function() {
     }
     //alert($('#mainHeader').height());
     //alert( $(window).height());
-    var $starter = $(window).height() - $('#mainHeader').height();
+    //var $starter = $(window).height() - $('#mainHeader').height();
+    //宗儒：讓選單直接出現，
+    var $starter = 0;
 
-    $(window).scroll(function() {
+    // $(window).scroll(function() {
 
-     if ($('#fullScreen').length)
-     {
-     	var $windowScrollPosition = $(window).scrollTop();
+    //  if ($('#fullScreen').length)
+    //  {
+    //  	var $windowScrollPosition = $(window).scrollTop();
 
-        if ( $windowScrollPosition >= $starter ){
+    //     if ( $windowScrollPosition >= $starter ){
 
-       		$('#mainHeader').css({
-       			'opacity': 1,
-       			'transform':' scaleY(1)'
-       		});
+    //    		$('#mainHeader').css({
+    //    			'opacity': 1,
+    //    			'transform':' scaleY(1)'
+    //    		});
 
-       } else if ( $windowScrollPosition <= 50  ){
+    //    } else if ( $windowScrollPosition <= 50  ){
 
-       		$('#mainHeader').css({
-       			'opacity': 0,
-       			'transform':' scaleY(0)'
-       		});
+    //    		$('#mainHeader').css({
+    //    			'opacity': 0,
+    //    			'transform':' scaleY(0)'
+    //    		});
 
-       }
-   	}
+    //    }
+   	// }
 
-    });
+    // });
 
 
 
