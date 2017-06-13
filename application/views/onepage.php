@@ -960,8 +960,7 @@
 						</div>
 					</section>-->
 					<!-- End footer -->
-				</div>
-				<?php include('Law_1.php');?>
+				</div>				
 				<!-- global wrapper -->
 		<!-- End Document 
 		================================================== -->

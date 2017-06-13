@@ -113,6 +113,12 @@ $(document).ready(function() {
             }); //更新村里下拉選單		
 	});
 	
+	//驗證碼
+	$("#verifyImg").on('click', function(event) {		
+		var timestamp = new Date().getTime();
+		var imgsrc = $(this).attr('src').split('?')[0];//get image url without query string
+		$(this).attr('src', imgsrc+'?'+timestamp);
+	});
 
 
 //home_income
