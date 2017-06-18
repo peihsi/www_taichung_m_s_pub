@@ -2,9 +2,9 @@ $(document).ready(function() {
 	$("#home_members").on('change', function(event) {
 		event.preventDefault();
 		if($(this).val() != "" && $(this).val() > 0){
-			$("#home_not_members").parents('div').eq(0).collapse('show');
+			//$("#home_not_members").parents('div').eq(0).collapse('show');
 			$("#home_income").parents('div').eq(0).find('label > span').text(13084*($("#home_members").val() - $("#home_not_members").val()));
-
+			$("#home_property").parents('div').eq(0).find('label > span').text(250000*($("#home_members").val() - $("#home_not_members").val() - 1) + 2500000);
 
 
 		}
@@ -19,52 +19,53 @@ $(document).ready(function() {
 	$("#home_not_members").on('change', function(event) {
 		event.preventDefault();
 		if($(this).val() != "" && $(this).val() >= 0){
-			$("#home_income").parents('div').eq(0).collapse('show');
+			//$("#home_income").parents('div').eq(0).collapse('show');
 			$("#home_income").parents('div').eq(0).find('label > span').text(13084*($("#home_members").val() - $("#home_not_members").val()));
-			
+			$("#home_property").parents('div').eq(0).find('label > span').text(250000*($("#home_members").val() - $("#home_not_members").val() - 1) + 2500000);
 
 
 
 		}
-		else{
-			$("#home_not_members").parents('div').eq(0).collapse('hide');
-			$("#home_income").parents('div').eq(0).collapse('hide');
+		// else{
+		// 	$("#home_not_members").parents('div').eq(0).collapse('hide');
+		// 	$("#home_income").parents('div').eq(0).collapse('hide');
 
 			
-		}
+		// }
 	});
 
 	$("#home_income").on('change', function(event) {
 		event.preventDefault();
-			$("#home_page1").removeClass('col-sm-offset-3');
+			//$("#home_page1").removeClass('col-sm-offset-3');
 			$("#home_property").parents('div').eq(0).find('label > span').text(250000*($("#home_members").val() - $("#home_not_members").val() - 1) + 2500000);
-			setTimeout(function(){
-  				$("#home_page2").collapse('show');
-			}, 1000);
+			// setTimeout(function(){
+  	// 			$("#home_page2").collapse('show');
+			// }, 1000);
 			
 	});
 
 	$("#home_property").on('change', function(event) {
 		event.preventDefault();
-		$("#home_immproperty").parents('div').eq(0).collapse('show');
+		//$("#home_immproperty").parents('div').eq(0).collapse('show');
 		//$("#home_income").parents('div').eq(0).find('label > span').text(13084*($("#home_members").val() - $("#home_not_members").val()));
 		
 			
 	});
 
-	$("#home_immproperty").on('change', function(event) {
+	$("#home_count_sent").on('click', function(event) {
 		event.preventDefault();
-		$("#home_result").parents('div').eq(0).collapse('show');
+		$("#home_page3").css('height', '300px');
 
-  		$("#home_page3").collapse('show');
+  		
 
 
 		if($("#home_property").val() == "N" && $("#home_immproperty").val() == "N" && $("#home_income").val() == "N"){
-			$("#home_result").html('貴戶可能符合申請，您可向役男戶籍地區公所提出線上登記。<br>注意!本試算僅作參考，實際審核結果將依財稅資料與相關法規依據為主!');
+			$("#home_result").html('貴戶可能符合申請條件，您可向役男戶籍地區公所提出線上登記。<br>注意!本試算僅作參考，實際審核結果將依財稅資料與相關法規依據為主!');
 		}
 		else{
 			$("#home_result").html('貴戶似乎不符合申請條件，但您仍可向役男戶籍地區公所提出線上登記。<br>注意!本試算僅作參考，實際審核結果將依財稅資料與相關法規依據為主!');
 		}
+		//$("#home_page3").collapse('show');
 		
 		//$("#home_income").parents('div').eq(0).find('label > span').text(13084*($("#home_members").val() - $("#home_not_members").val()));
 			
@@ -76,6 +77,7 @@ $(document).ready(function() {
 		$("#contactSlice").collapse('show');
 		setTimeout(function(){
   			$("#homeform-nav-bt").trigger('click');
+  			$("#homeform-nav-li").css('display', 'block');
 		}, 500);
 		
 		
