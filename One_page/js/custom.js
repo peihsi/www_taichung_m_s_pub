@@ -857,7 +857,7 @@ $('.iconBoxV3 a').hover(function() {
     
 });
 
-
+/*
     if($('.scrollMenu').length || $('.scrollLink').length){
 
    		$('#globalWrapper').on( 'click', '#mainHeader .nav li a, .scrollLink',function(event) {
@@ -879,7 +879,7 @@ $('.iconBoxV3 a').hover(function() {
 
    			}
    		});
-   	}
+   	}*/
 
    	if (isMobile === false && typeof $("section").data('stellar-background-ratio') !== 'undefined')
    	{

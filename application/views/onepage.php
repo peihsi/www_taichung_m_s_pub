@@ -48,10 +48,26 @@
 		<link rel="apple-touch-icon" sizes="114x114" href="/One_page/images/apple-touch-icon-114x114.png">
 		<link rel="apple-touch-icon" sizes="144x144" href="/One_page/images/apple-touch-icon-144x144.png">-->
 		<style type="text/css">
-			
+			.slice {
+			    min-height: CALC(100VH);
+			    align-items: center;
+    			display: flex;
+    			padding-top: 120px;
+			}
+			.collapse {
+    			display: none;
+			}
+
+			/*.slice > .container {
+			    position: relative;
+			    top: 50%;
+			    transform: translateY(-50%);
+			}*/
+
 		</style>
 	</head>
-	<body data-spy="scroll" data-target="#scrollTarget" data-offset="150" id="fullScreen">
+	<!--<body data-spy="scroll" data-target="#scrollTarget" data-offset="150" id="fullScreen">-->
+	<body data-target="#scrollTarget" data-offset="150" id="fullScreen">
 		<!-- Preloader -->
 		<div id="preloader">
 			<div id="status">
@@ -71,10 +87,11 @@
 			<!-- header -->
 			<header id="mainHeader" class="navbar-fixed-top" role="banner" style="opacity: 1;transform: scaleY(1);">
 				<div class="container">
-					<nav class="navbar navbar-default scrollMenu" role="navigation">
+					<!--<nav class="navbar navbar-default scrollMenu" role="navigation">-->
+					<nav class="navbar navbar-default">
 						<div class="navbar-header">
 							<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
-							<a class="navbar-brand" href="index-fullscreen.html"><img src="/One_page/images/main-logo.svg" alt="臺中市役男家屬生活扶助網" style="width: 250px;"/></a> </div>
+							<a class="navbar-brand"><img src="/One_page/images/main-logo.svg" alt="臺中市役男家屬生活扶助網"/></a> </div>
 							<div class="collapse navbar-collapse navbar-ex1-collapse" id="scrollTarget">
 								<ul class="nav navbar-nav pull-right">
 									<!--<li class="active"><a href="#homeFullScreen"><i class="icon-home-outline"></i>首頁</a> </li>-->
@@ -130,7 +147,7 @@
 					<div class="container">
 						<div class="row">
 							<div class="col-xs-12">
-								<h1 style="font-weight: 600;">役男家屬生活扶助網</h1>
+								<h1 style="font-weight: 600;">役男家屬生活扶助</h1>
 								<h2 class="subTitle">對經濟弱勢役男家庭的各類服務幫助</h2>
 							</div>
 						</div>
@@ -164,7 +181,7 @@
 								<div class="jumbotron">
 									<div class="container">
 										<h2> 怎樣的家庭狀況能申請扶助?</h2>
-										<p>本扶助服務的資格認定條件與社會救助法相同，需參考家庭所得、成員身分、動產與不動產額度資格等。但認定標準上較社會救助法略為寬鬆，役男家庭若有需要，可向役男戶籍地之區公所人文科洽詢或請里幹事轉達。</p>
+										<p>本扶助服務的資格認定條件與社會救助法相同，需參考家庭所得、成員身分、動產與不動產額度資格等。但認定標準上較社會救助法略為寬鬆，役男家庭若有需要，可向役男戶籍地之區公所人文課洽詢或請里幹事轉達。</p>
 										<p><a class="btn btn-lg alert-link portfolioSheet" href="example01.html" style="    background: #b5b5b5;">參考看看...</a></p>
 									</div>
 								</div>		
@@ -194,7 +211,7 @@
 					<div class="container">
 						<div class="row">
 							<div class="col-xs-12">
-								<h1 style="font-weight: 600;">申請流程說明</h1>
+								<h1 style="font-weight: 600;">申請流程</h1>
 								<h2 class="subTitle">概略申請流程與申辦時之應備文件</h2>
 							</div>
 						</div>
@@ -490,13 +507,14 @@
 
 						</div>
 					</div>-->
-					<div class="row">
+						
+					<div class="container clearfix">
+						<div class="row">
 							<div class="col-xs-12">
 								<h1 style="font-weight: 600;">參考資訊</h1>
 								<h2 class="subTitle">對經濟弱勢役男家庭的各類服務幫助</h2>
 							</div>
 						</div>
-					<div class="container clearfix">
 						<div class="row">
 							<a class="col-sm-4 Ref3x3 portfolioSheet" href="info-01.html" title="link"><h3>安家費與三節慰問金</h3><p>安家費與三節慰問金的發放標準</p></a>
 							<a class="col-sm-4 Ref3x3 portfolioSheet" href="info-property-limit.html" title="link"><h3>各縣市中低收入戶財產限制</h3><p>106年度各縣市中低收入戶財產限制規則</p></a>
@@ -580,7 +598,7 @@
 									<br>
 									<div class="form-group" aria-expanded="false" style="">
 										<label for="home_result">概算結果</label>
-										<div name="home_result" class="form-control required digits" type="tel" id="home_result" style="height: 10em;">貴戶可能符合</div>
+										<div name="home_result" class="form-control required digits" type="tel" id="home_result" style="    height: 8em; line-height: 2; font-size: 16px;">貴戶可能符合</div>
 										<br><a class="btn btn-lg alert-link" href="#" id="show_form_bt" style="text-align: center;display: block; background: #78966f;">立刻登記</a>
 									</div>
 	
@@ -766,7 +784,7 @@
 										<fieldset class="clearfix securityCheck">
 											<legend>驗證碼</legend>
 											<div class="form-group">
-												<img src="/One_page/js-plugin/neko-contact-ajax-plugin/php/image.php" alt="Image verification" id="verifyImg"/>
+												<img src="/One_page/js-plugin/neko-contact-ajax-plugin/php/image.php" alt="Image verification" id="verifyImg" style="zoom: 1.5;"/>
 												<input class="required form-control" id="verify" name="verify" type="text" title="請輸入驗證碼">
 											</div>
 										</fieldset>
@@ -779,21 +797,21 @@
 							</div>
 						</div>
 					</section>
-					<div id="paralaxSlice4" data-stellar-background-ratio="0.5" >
+					<!--<div id="paralaxSlice4" data-stellar-background-ratio="0.5" >
 						<div class="maskParent">
 							<div class="paralaxMask"></div>
 
 							<div class="paralaxText">
-								<br><!--<blockquote></blockquote>--><br><br><br><br><br>
+								<br><br><br><br><br><br>
 
 							</div>
 						</div>
-					</div>
-					<section  id="process">
+					</div>-->
+					<section  id="process" class="slice">
 						<div class="container">
 							<div class="row"><br>
 								<div class="col-sm-12">
-									<h1 class="noSubtitle" style="font-weight: 600;">扶助申請案-辦理進度查詢</h1>
+									<h1 class="noSubtitle" style="font-weight: 600;">進度查詢</h1>
 								</div>
 
 								<div class="col-sm-4">
@@ -898,7 +916,7 @@
 						</div>
 					</section>-->
 					<!-- End footer -->
-				</div>				
+				</div>
 				<!-- global wrapper -->
 		<!-- End Document 
 		================================================== -->

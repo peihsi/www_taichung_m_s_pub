@@ -4,7 +4,7 @@ $(document).ready(function() {
 		if($(this).val() != "" && $(this).val() > 0){
 			//$("#home_not_members").parents('div').eq(0).collapse('show');
 			$("#home_income").parents('div').eq(0).find('label > span').text(13084*($("#home_members").val() - $("#home_not_members").val()));
-			$("#home_property").parents('div').eq(0).find('label > span').text(250000*($("#home_members").val() - $("#home_not_members").val() - 1) + 2500000);
+			$("#home_property").parents('div').eq(0).find('label > span').text(250000*($("#home_members").val() - $("#home_not_members").val()) + 2500000);
 
 
 		}
@@ -21,7 +21,7 @@ $(document).ready(function() {
 		if($(this).val() != "" && $(this).val() >= 0){
 			//$("#home_income").parents('div').eq(0).collapse('show');
 			$("#home_income").parents('div').eq(0).find('label > span').text(13084*($("#home_members").val() - $("#home_not_members").val()));
-			$("#home_property").parents('div').eq(0).find('label > span').text(250000*($("#home_members").val() - $("#home_not_members").val() - 1) + 2500000);
+			$("#home_property").parents('div').eq(0).find('label > span').text(250000*($("#home_members").val() - $("#home_not_members").val()) + 2500000);
 
 
 
@@ -37,7 +37,7 @@ $(document).ready(function() {
 	$("#home_income").on('change', function(event) {
 		event.preventDefault();
 			//$("#home_page1").removeClass('col-sm-offset-3');
-			$("#home_property").parents('div').eq(0).find('label > span').text(250000*($("#home_members").val() - $("#home_not_members").val() - 1) + 2500000);
+			$("#home_property").parents('div').eq(0).find('label > span').text(250000*($("#home_members").val() - $("#home_not_members").val()) + 2500000);
 			// setTimeout(function(){
   	// 			$("#home_page2").collapse('show');
 			// }, 1000);
