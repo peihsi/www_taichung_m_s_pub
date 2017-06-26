@@ -950,10 +950,9 @@ jQuery(function() {
             $(form).ajaxSubmit({
               target: ".result",
               success: function(){
+                CWait_End();            //結束等待動畫
               	if($('.result .alert-success').length){
-              		$("#contactfrm").trigger('reset');
-                    CWait_End();            //結束等待動畫
-
+              		$("#contactfrm").trigger('reset');                    
               	}
               }
           });
