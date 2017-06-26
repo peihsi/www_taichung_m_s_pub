@@ -48,7 +48,7 @@
 		<link rel="apple-touch-icon" sizes="114x114" href="/One_page/images/apple-touch-icon-114x114.png">
 		<link rel="apple-touch-icon" sizes="144x144" href="/One_page/images/apple-touch-icon-144x144.png">-->
 		<style type="text/css">
-			.slice {
+			.section_fade {
 			    min-height: CALC(100VH);
 			    align-items: center;
     			display: flex;
@@ -143,7 +143,7 @@
 					</div>
 				</section>-->
 				<!-- about us -->
-				<section class="slice noPaddingBottom" id="about"  data-stellar-background-ratio="0.5" style="padding-top: 8em;">
+				<section class="slice noPaddingBottom section_fade" id="about"  data-stellar-background-ratio="0.5" style="padding-top: 8em;">
 					<div class="container">
 						<div class="row">
 							<div class="col-xs-12">
@@ -207,7 +207,7 @@
 				<!-- about us -->
 
 				<!-- services -->
-				<section class="slice color4" id="services" style="Z-INDEX: 10;position: relative;">
+				<section class="slice color4 section_fade" id="services" style="Z-INDEX: 10;position: relative;">
 					<div class="container">
 						<div class="row">
 							<div class="col-xs-12">
@@ -305,7 +305,7 @@
 					</div>
 				</div>-->
 
-				<section class="slice" id="works">
+				<section class="slice section_fade" id="works">
 					<!--<div class="container clearfix">
 						<div class="row">
 							<div class="col-sm-12">
@@ -543,7 +543,7 @@
 							</div>
 						</div>
 					</div>-->
-					<section class="slice" id="team" style="background: #d2f3c8;">
+					<section class="slice section_fade" id="team" style="background: #d2f3c8;">
 						<div class="container">
 							<div class="row">
 								<div class="col-xs-12">
@@ -673,7 +673,7 @@
 							</div>
 						</div>
 					</div>-->
-					<section  id="contactSlice"  class="slice collapse" aria-expanded="false" style="height: 0px;">
+					<section  id="contactSlice"  class="slice section_fade collapse" aria-expanded="false" style="height: 0px;">
 						<div class="container">
 							<div class="row">
 
@@ -807,7 +807,7 @@
 							</div>
 						</div>
 					</div>-->
-					<section  id="process" class="slice">
+					<section  id="process" class="slice section_fade">
 						<div class="container">
 							<div class="row"><br>
 								<div class="col-sm-12">
@@ -879,32 +879,36 @@
 
 					<!-- content -->
 					<!-- footer -->
-					<footer class="color4">
-						<section id="mainFooter">
-							<div class="container" id="footer">
-								<div class="row">
-									<div class="col-sm-6">
-										<div class="footerWidget">
-											<a href="http://www.civil.taichung.gov.tw/" title="臺中市政府民政局" target="_blank"><img src="One_Page/images/main-logo.png" alt="臺中市政府民政局" id="footerLogo"></a>
-											<p><span style="color: #f5fe78;">臺中市服兵役役男家屬扶助網</span>是一個便捷的臺中市役男家屬扶助整合資訊平台。我們希望能藉此帶給民眾更完整、更充足、更方便的相關資訊。也歡迎您直接來電洽詢。</p>
+					<section>
+						<footer class="color4">
+							<div id="mainFooter">
+								<div class="container" id="footer">
+									<div class="row">
+										<div class="col-sm-6">
+											<div class="footerWidget">
+												<a href="http://www.civil.taichung.gov.tw/" title="臺中市政府民政局" target="_blank"><img src="One_Page/images/main-logo.png" alt="臺中市政府民政局" id="footerLogo"></a>
+												<p><span style="color: #f5fe78;">臺中市服兵役役男家屬扶助網</span>是一個便捷的臺中市役男家屬扶助整合資訊平台。我們希望能藉此帶給民眾更完整、更充足、更方便的相關資訊。也歡迎您直接來電洽詢。</p>
+											</div>
 										</div>
-									</div>
-									<div class="col-sm-6">
-										<div class="footerWidget">
+										<div class="col-sm-6">
+											<div class="footerWidget">
 
-											<h3>聯絡資訊</h3>
-											<address>
-												<p> <i class="icon-location"></i>&nbsp;40701臺中市西屯區
-													臺灣大道三段99號惠中樓6樓<br>
-													<i class="icon-phone"></i>&nbsp;勤務管理科專線：04-2217-7166<br>
-													<!--<i class="icon-mail-alt"></i>&nbsp;<a href="mailto:little@little-neko.com">little@little-neko.com</a> </p>-->
+												<h3>聯絡資訊</h3>
+												<address>
+													<p> <i class="icon-location"></i>&nbsp;40701臺中市西屯區
+														臺灣大道三段99號惠中樓6樓<br>
+														<i class="icon-phone"></i>&nbsp;勤務管理科專線：04-2217-7166<br>
+														<!--<i class="icon-mail-alt"></i>&nbsp;<a href="mailto:little@little-neko.com">little@little-neko.com</a> -->
+													</p>
 												</address>
 											</div>
 										</div>
 									</div>
 								</div>
-							</section>
-						</footer>
+							</div>
+						</footer>	
+					</section>
+
 					<!--<section  id="footerRights">
 						<div class="container">
 							<div class="row">
@@ -946,8 +950,10 @@
 
 
 		<!-- Custom  -->
-		<script type="text/javascript" src="/One_page/js/custom.js"></script>
-		<script type="text/javascript" src="/One_page/js/home_count.js"></script>
+		<script type="text/javascript" src="/One_page/js/custom.js?<?php echo time();?>"></script>
+		<script type="text/javascript" src="/One_page/js/home_count.js?<?php echo time();?>"></script>
+		<script type="text/javascript" src="/One_page/js/cz_menu.js?<?php echo time();?>"></script>
+		<script type="text/javascript" src="/One_page/js/cz_js.js?<?php echo time();?>"></script>
 		<script type="text/javascript">
 			$(function () {
 				  $('[data-toggle="popover"]').popover({ trigger: "hover" , container: 'body'})
