@@ -952,8 +952,8 @@
 		<!-- Custom  -->
 		<script type="text/javascript" src="/One_page/js/custom.js?<?php echo time();?>"></script>
 		<script type="text/javascript" src="/One_page/js/home_count.js?<?php echo time();?>"></script>
-		<script type="text/javascript" src="/One_page/js/cz_menu.js?<?php echo time();?>"></script>
-		<script type="text/javascript" src="/One_page/js/cz_js.js?<?php echo time();?>"></script>
+		<!--<script type="text/javascript" src="/One_page/js/cz_menu.js?<?php echo time();?>"></script>
+		<script type="text/javascript" src="/One_page/js/cz_js.js?<?php echo time();?>"></script>-->
 		<script type="text/javascript">
 			$(function () {
 				  $('[data-toggle="popover"]').popover({ trigger: "hover" , container: 'body'})
