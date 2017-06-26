@@ -705,12 +705,12 @@
 											<input type="text" class="form-control" name="id" id="id" placeholder="身分證字號"  title="請輸入正確的身分證字號"/>
 										</div>
 										<div class="form-group">
-											<label for="birthday">出生年月日</label>
-											<input type="text" class="form-control" name="birthday" id="birthday" placeholder="yyyy-mm-dd"  title="請輸入出生年月日，格式: yyyy-mm-dd"/>
+											<label for="birthday">出生西元年月日</label>
+											<input type="date" class="form-control" name="birthday" id="birthday" placeholder="yyyy-mm-dd"  title="請輸入出生西元年月日，格式: yyyy-mm-dd"/>
 										</div>
 										<div class="form-group">
 											<label for="bdate">入伍日期</label>
-											<input type="text" class="form-control" name="bdate" id="bdate" placeholder="yyyy-mm-dd"  title="請輸入入伍日期，格式: yyyy-mm-dd"/>
+											<input type="date" class="form-control" name="bdate" id="bdate" placeholder="yyyy-mm-dd"  title="請輸入入伍日期，格式: yyyy-mm-dd"/>
 										</div>
 										<div class="form-group">
 											<label for="mtype">服役軍種</label>
@@ -840,8 +840,8 @@
 									</div>
 									<div class="col-sm-4">
 										<div class="form-group">
-											<label for="q_birthday">出生年月日</label>
-											<input type="text" class="form-control" name="q_birthday" id="q_birthday" placeholder="yyyy-mm-dd"  title="請輸入出生年月日，格式: yyyy-mm-dd"/>
+											<label for="q_birthday">出生西元年月日</label>											
+											<input type="date" class="form-control" name="q_birthday" id="q_birthday" placeholder="yyyy-mm-dd"  title="請輸入出生西元年月日，格式: yyyy-mm-dd"/>
 										</div>										
 									</div>                    
 									<div class="col-md-8 col-md-offset-4" style="margin-bottom: 5em;">
