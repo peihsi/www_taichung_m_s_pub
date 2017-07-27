@@ -29,5 +29,19 @@ class Area_model extends CI_Model {
 		return $result;		
 	}
 
+	function military_type_list(){
+		var_dump("result");
+		$this->db->select('name');
+		$this->db->from('military_type');
+		$this->db->order_by('sort');
+		//$this->db->where('Login_PW', $Login_PW);
+		$query = $this->db->get();
+		$result = $query->result_array();
+		//var_dump($result);
+		//log_message('debug', 'military type list:');
+		//log_message('debug', print_r($result,true));		
+		return $result;
+	}
+
 
 }

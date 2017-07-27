@@ -5,144 +5,8 @@
 <!--[if (gte IE 9)|!(IE)]><!-->
 <html lang="en">
 <!--<![endif]-->
-<head>
-		<!-- Basic Page Needs
-		================================================== -->
-		<meta charset="utf-8">
-		<title>臺中市役男家屬扶助資訊網</title>
-		<meta name="description" content="臺中市 役男 服役 當兵 家屬 生活扶助 申請 資訊">
-		<meta name="author" content="標竿數位文化工作室">
-		<!-- Mobile Specific Metas
-		================================================== -->
-		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-		<!-- CSS
-		================================================== -->
-		<!-- Bootstrap  -->
-		<link type="text/css" rel="stylesheet" href="/One_page/bootstrap/css/bootstrap.min.css">
-		<!-- web font  -->
-		<link href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,800" rel="stylesheet" type="text/css">
-		<!-- plugin css  -->
-		<link rel="stylesheet" type="text/css" href="/One_page/js-plugin/animation-framework/animate.css" />
-		<link rel="stylesheet" type="text/css" href="/One_page/js-plugin/magnific-popup/magnific-popup.css" />
-		<link type="text/css" rel="stylesheet" href="/One_page/js-plugin/isotope/css/style.css">
-		<link rel="stylesheet" type="text/css" href="/One_page/js-plugin/flexslider/flexslider.css" />
-		<link rel="stylesheet" type="text/css" href="/One_page/js-plugin/pageSlide/jquery.pageslide.css" />
-		<!-- Owl carousel-->
-		<link rel="stylesheet" href="/One_page/js-plugin/owl.carousel/owl-carousel/owl.carousel.css">
-		<link rel="stylesheet" href="/One_page/js-plugin/owl.carousel/owl-carousel/owl.theme.css">
-		<link rel="stylesheet" href="/One_page/js-plugin/owl.carousel/owl-carousel/owl.transitions.css">
-		<!-- icon fonts -->
-		<link type="text/css" rel="stylesheet" href="/One_page/font-icons/custom-icons/css/custom-icons.css">
-		<link type="text/css" rel="stylesheet" href="/One_page/font-icons/custom-icons/css/custom-icons-ie7.css">
-		<!-- Custom css -->
-		<link type="text/css" rel="stylesheet" href="/One_page/css/layout.css">
-		<link type="text/css" id="colors" rel="stylesheet" href="/One_page/css/sea-green.css">
-		<link type="text/css" id="colors" rel="stylesheet" href="/One_page/css/czchen.css">
-		<!--[if lt IE 9]><script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script> <![endif]-->
-		<script src="/One_page/js/modernizr-2.6.1.min.js"></script>
-		<!-- Favicons
-		================================================== -->
-		<!--<link rel="shortcut icon" href="/One_page/images/favicon.ico">
-		<link rel="apple-touch-icon" href="images/apple-touch-icon.png">
-		<link rel="apple-touch-icon" sizes="72x72" href="/One_page/images/apple-touch-icon-72x72.png">
-		<link rel="apple-touch-icon" sizes="114x114" href="/One_page/images/apple-touch-icon-114x114.png">
-		<link rel="apple-touch-icon" sizes="144x144" href="/One_page/images/apple-touch-icon-144x144.png">-->
-		<style type="text/css">
-			.section_fade {
-			    min-height: CALC(100VH);
-			    align-items: center;
-    			display: flex;
-    			padding-top: 120px;
-			}
-			.collapse {
-    			display: none;
-			}
+	<?php include('one_top.php') ?>
 
-			/*.slice > .container {
-			    position: relative;
-			    top: 50%;
-			    transform: translateY(-50%);
-			}*/
-
-		</style>
-	</head>
-	<!--<body data-spy="scroll" data-target="#scrollTarget" data-offset="150" id="fullScreen">-->
-	<body data-target="#scrollTarget" data-offset="150" id="fullScreen">
-		<!-- Preloader -->
-		<div id="preloader">
-			<div id="status">
-				<img src="/One_page/images/theme-pics/loader.gif" alt=""/><h1 class="noSubtitle">系統載入中</h1>
-			</div>
-		</div>
-		<div id="cortana_wait" style="display: none;">
-		    <div id="cortana_wait_cont">
-		        <div id="cortana_wait_icon"></div><div id="cortana_wait_msg">與系統連線中...</div>
-		    </div>
-		</div>
-		<!-- Preloader -->
-		<!-- Primary Page Layout 
-		================================================== -->
-		<!-- globalWrapper -->
-		<div id="globalWrapper" class="localscroll">
-			<!-- header -->
-			<header id="mainHeader" class="navbar-fixed-top" role="banner" style="opacity: 1;transform: scaleY(1);">
-				<div class="container">
-					<!--<nav class="navbar navbar-default scrollMenu" role="navigation">-->
-					<nav class="navbar navbar-default">
-						<div class="navbar-header">
-							<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
-							<a class="navbar-brand"><img src="/One_page/images/main-logo.svg" alt="臺中市役男家屬生活扶助網"/></a> </div>
-							<div class="collapse navbar-collapse navbar-ex1-collapse" id="scrollTarget">
-								<ul class="nav navbar-nav pull-right">
-									<!--<li class="active"><a href="#homeFullScreen"><i class="icon-home-outline"></i>首頁</a> </li>-->
-									<li><a href="#about"><i class="icon-star"></i>扶助簡介</a> </li>
-									<li><a href="#services"><i class="icon-thumbs-up"></i>申請流程</a> </li>
-									<li><a href="#works"><i class="icon-popup-1"></i>參考資訊</a> </li>
-									<li><a href="#team"><i class="icon-users"></i>線上試算</a> </li>
-									<li style="display: none;" id="homeform-nav-li"><a href="#contactSlice" id="homeform-nav-bt"><i class="icon-mail"></i>線上登記</a> </li>
-									<li><a href="#process"><i class="icon-users"></i>進度查詢</a> </li>
-									<!--<li><a href="https://wrapbootstrap.com/theme/ashley-one-page-parallax-bootstrap-3-WB0R11207?ref=littleNeko" target="_blank"><i class="icon-download-outline"></i>Download</a> </li>-->
-								</ul>
-							</div>
-
-						</nav>
-					</div>
-				</header>
-				<!-- header -->
-				<!-- content -->
-				<style type="text/css">
-					.flex-control-nav.flex-control-paging{
-						opacity: 0;
-					}
-				</style>
-				<!--關閉全幅首頁，否則切換頁時效能很差-->
-				<!--
-				<section id="homeFullScreen" data-stellar-background-ratio="0.5">
-					<div class="maskParent" >
-						<div class="paralaxMask"></div>
-						<div id="fullScreenSliderWrapper">
-							<div id="logoBig">
-								<img class="img-responsive" src="/One_page/images/main-logo-big.svg" alt="Little Neko Ashley Bootstrap 3 Parallax One Page" />
-							</div>
-
-							<div class="flexslider" id="flexHome">
-								<ul class="slides">
-									<li>
-										<h1>役男家屬扶助資訊網</h1>							
-									</li>
-									<li>
-										<h1>提供線上申請與進度查詢</h1>
-									</li>
-									<li>
-										<h1>各種最便利完整的資訊</h1>
-									</li>
-								</ul>
-							</div> 
-							<a href="#about" class="homeBtn btn scrollLink"><i class="icon-down"></i>進入網站</a>
-						</div>
-					</div>
-				</section>-->
-				<!-- about us -->
 				<section class="slice noPaddingBottom section_fade" id="about"  data-stellar-background-ratio="0.5" style="padding-top: 8em;">
 					<div class="container">
 						<div class="row">
@@ -908,56 +772,11 @@
 							</div>
 						</footer>	
 					</section>
+				<?php include('one_bottom.php') ?>
 
-					<!--<section  id="footerRights">
-						<div class="container">
-							<div class="row">
-								<div class="col-sm-12 text-center">
-									<p>Copyright © 2015 <a href="http://www.little-neko.com" target="blank">Little NEKO</a> / All rights reserved.</p>
-								</div>
-
-							</div>
-						</div>
-					</section>-->
-					<!-- End footer -->
-				</div>
-				<!-- global wrapper -->
-		<!-- End Document 
-		================================================== -->
-		<script type="text/javascript" src="/One_page/js-plugin/respond/respond.min.js"></script>
-		<script type="text/javascript" src="/One_page/js-plugin/jquery/jquery.1.10.2.min.js"></script>
-		<script type="text/javascript" src="/One_page/js-plugin/jquery-ui/jquery-ui-1.8.23.custom.min.js"></script>
-		<!-- third party plugins  -->
-		<script type="text/javascript" src="/One_page/bootstrap/js/bootstrap.js"></script>
-		<script type="text/javascript" src="/One_page/js-plugin/easing/jquery.easing.1.3.js"></script>
-
-		<script type="text/javascript" src="/One_page/js-plugin/flexslider/jquery.flexslider-min.js"></script>
-
-
-		<script type="text/javascript" src="/One_page/js-plugin/isotope/jquery.isotope.min.js"></script>
-		<script type="text/javascript" src="/One_page/js-plugin/isotope/jquery.isotope.sloppy-masonry.min.js"></script>
-		<script type="text/javascript" src="/One_page/js-plugin/neko-contact-ajax-plugin/js/jquery.form.js"></script>
-		<script type="text/javascript" src="/One_page/js-plugin/neko-contact-ajax-plugin/js/jquery.validate.min.js"></script>
-		<script type="text/javascript" src="/One_page/js-plugin/magnific-popup/jquery.magnific-popup.min.js"></script>
-		<script type="text/javascript" src="/One_page/js-plugin/parallax/js/jquery.scrollTo-1.4.3.1-min.js"></script>
-		<script type="text/javascript" src="/One_page/js-plugin/parallax/js/jquery.localscroll-1.2.7-min.js"></script>
-		<script type="text/javascript" src="/One_page/js-plugin/parallax/js/jquery.stellar.min.js"></script>
-		<!-- <script type="text/javascript" src="js-plugin/smoothscroll/SmoothScroll.js"></script> -->
-		<script type="text/javascript" src="/One_page/js-plugin/pageSlide/jquery.pageslide-custom.js"></script>
-		<script type="text/javascript" src="/One_page/js-plugin/neko-share-urls/generator.js"></script>
-
-		<script type="text/javascript" src="/One_page/js-plugin/owl.carousel/owl-carousel/owl.carousel.min-MODIFIED.js"></script>
-
-
-		<!-- Custom  -->
-		<script type="text/javascript" src="/One_page/js/custom.js?<?php echo time();?>"></script>
-		<script type="text/javascript" src="/One_page/js/home_count.js?<?php echo time();?>"></script>
-		<!--<script type="text/javascript" src="/One_page/js/cz_menu.js?<?php echo time();?>"></script>
-		<script type="text/javascript" src="/One_page/js/cz_js.js?<?php echo time();?>"></script>-->
 		<script type="text/javascript">
-			$(function () {
-				  $('[data-toggle="popover"]').popover({ trigger: "hover" , container: 'body'})
-			})
+			$("#scrollTarget > ul > li").eq(0).addClass('active');
 		</script>
+
 	</body>
-	</html>
+</html>

@@ -1,10 +1,21 @@
+function P3_PhaseChange(){
+		$("#P3-S1").css('transform', 'translate(-100VW, 0px)');
+	setTimeout(function(){
+  		$("#P3-S1").css('display', 'none');			}, 600);
+	setTimeout(function(){
+  		$("#P3-ST1").text('第二步：線上扶助申請');		}, 500);
+	setTimeout(function(){
+  		$("#P3-S2").css('display', 'block');		}, 600);
+
+
+}
 $(document).ready(function() {
 	$("#home_members").on('change', function(event) {
 		event.preventDefault();
 		if($(this).val() != "" && $(this).val() > 0){
 			//$("#home_not_members").parents('div').eq(0).collapse('show');
-			$("#home_income").parents('div').eq(0).find('label > span').text(13084*($("#home_members").val() - $("#home_not_members").val()));
-			$("#home_property").parents('div').eq(0).find('label > span').text(250000*($("#home_members").val() - $("#home_not_members").val()) + 2500000);
+			$("#home_income").parents('div').eq(0).find('label > span').text(NWC(13084*($("#home_members").val() - $("#home_not_members").val())));
+			$("#home_property").parents('div').eq(0).find('label > span').text(NWC(250000*($("#home_members").val() - $("#home_not_members").val()) + 2500000));
 
 
 		}
@@ -20,8 +31,8 @@ $(document).ready(function() {
 		event.preventDefault();
 		if($(this).val() != "" && $(this).val() >= 0){
 			//$("#home_income").parents('div').eq(0).collapse('show');
-			$("#home_income").parents('div').eq(0).find('label > span').text(13084*($("#home_members").val() - $("#home_not_members").val()));
-			$("#home_property").parents('div').eq(0).find('label > span').text(250000*($("#home_members").val() - $("#home_not_members").val()) + 2500000);
+			$("#home_income").parents('div').eq(0).find('label > span').text(NWC(13084*($("#home_members").val() - $("#home_not_members").val())));
+			$("#home_property").parents('div').eq(0).find('label > span').text(NWC(250000*($("#home_members").val() - $("#home_not_members").val()) + 2500000));
 
 
 
@@ -54,31 +65,30 @@ $(document).ready(function() {
 
 	$("#home_count_sent").on('click', function(event) {
 		event.preventDefault();
-		$("#home_page3").css('height', '300px');
-
-  		
-
-
+		//$("#home_page3").css('height', '300px');
 		if($("#home_property").val() == "N" && $("#home_immproperty").val() == "N" && $("#home_income").val() == "N"){
-			$("#home_result").html('貴戶可能符合申請條件，您可向役男戶籍地區公所提出線上登記。<br>注意!本試算僅作參考，實際審核結果將依財稅資料與相關法規依據為主!');
+			$("#home_result").html('貴戶可能符合申請條件，您可提出線上申請。<br><br><br>注意!本試算僅作參考，實際審核結果將依財稅資料與相關法規依據為主!');
 		}
 		else{
-			$("#home_result").html('貴戶似乎不符合申請條件，但您仍可向役男戶籍地區公所提出線上登記。<br>注意!本試算僅作參考，實際審核結果將依財稅資料與相關法規依據為主!');
+			$("#home_result").html('貴戶似乎不符合申請條件，但您仍可提出線上申請。<br><br><br>注意!本試算僅作參考，實際審核結果將依財稅資料與相關法規依據為主!');
 		}
+		$("#P3-next-Modal").modal("show");
+		$("body").stop().animate({scrollTop:0}, 500, 'swing');
 		//$("#home_page3").collapse('show');
 		
-		//$("#home_income").parents('div').eq(0).find('label > span').text(13084*($("#home_members").val() - $("#home_not_members").val()));
-			
+		//$("#home_income").parents('div').eq(0).find('label > span').text(13084*($("#home_members").val() - $("#home_not_members").val()));	
 	});
 
 	$("#show_form_bt").on('click', function(event) {
 		event.preventDefault();
 		event.stopPropagation();
-		$("#contactSlice").collapse('show');
-		setTimeout(function(){
+		$("#P3-next-Modal").modal("hide");
+		P3_PhaseChange();
+		//$("#contactSlice").collapse('show');
+		/*setTimeout(function(){
   			$("#homeform-nav-bt").trigger('click');
   			$("#homeform-nav-li").css('display', 'block');
-		}, 500);
+		}, 500);*/
 		
 		
 		/* Act on the event */
@@ -88,7 +98,7 @@ $(document).ready(function() {
             $('#village').empty();
             // $("#MSG").text("連線中...");
             $.ajax({
-                url: 'index.php/area/get_village_by_town',
+                url: '../area/get_village_by_town',
                 type: 'post',
                 dataType: 'json',
                 data: {
