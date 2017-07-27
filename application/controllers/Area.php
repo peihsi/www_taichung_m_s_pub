@@ -6,7 +6,7 @@ class Area extends CI_Controller {
         parent::__construct(); 
         $this->load->database();
         $this->load->model('area_model');
-     }
+    }
 
 	public function get_town_by_county(){	
 		
