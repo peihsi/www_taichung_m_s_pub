@@ -21,6 +21,7 @@ class Boy_model extends CI_Model {
 		$this->db->select('*');
 		$this->db->from('miliboy_table');
 		$this->db->where('身分證字號', $Boy_ID_code);
+		$this->db->where('役男刪除', 0);
 		//$this->db->where('Login_PW', $Login_PW);
 		$query = $this->db->get();
 		return $query;
