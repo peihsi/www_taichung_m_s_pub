@@ -50,11 +50,10 @@ class Formhandler extends CI_Controller {
 			$msg = "役男 [$name] 扶助案，線上登記成功！請攜帶證明文件前往戶籍所在區公所辦理。<br>
 					請填寫<a href='https://goo.gl/forms/3EWzF30XXThZyXU83' target='_blank' style='color: #d22121;'>線上問卷</a>，協助我們做出改進並提供更好的服務。";
 			echo '<div class="alert alert-success">'.$msg.'</div>';
-			$this->s_email($name, $id, $birthday, $phone);
+			$this->s_email($name, $id, $birthday, $phone, $email);
 		}			
 	}
-	private function s_email($name, $id, $birthday, $phone){
-	//public function s_email($name, $id, $birthday, $phone){
+	private function s_email($name, $id, $birthday, $phone, $email){
 		$config = Array(
 		    'protocol' => 'smtp',
 		    'smtp_host' => 'smtp.taichung.gov.tw',
@@ -72,7 +71,7 @@ class Formhandler extends CI_Controller {
 		//$this->email->set_newline("\r\n");
 		//$this->load->library('email');
 		$this->email->from('A0000@taichung.gov.tw','臺中市政府民政局');
-		$this->email->to('peterchen810@gmail.com'); 
+		$this->email->to($email); 
 		//$this->email->cc('another@another-example.com'); 
 		//$this->email->bcc('them@their-example.com'); 
 

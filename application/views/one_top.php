@@ -7,40 +7,15 @@
 		<meta name="author" content="標竿數位文化工作室">
 		<!-- Mobile Specific Metas
 		================================================== -->
-		<meta name="viewport"
-      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-		<!-- CSS
-		================================================== -->
-		<!-- Bootstrap  -->
+		<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 		<link type="text/css" rel="stylesheet" href="/One_page/bootstrap/css/bootstrap.min.css">
-		<!-- web font  -->
 		<link href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,800" rel="stylesheet" type="text/css">
-		<!-- plugin css  -->
-		<!--<link rel="stylesheet" type="text/css" href="/One_page/js-plugin/animation-framework/animate.css" />
-		<link rel="stylesheet" type="text/css" href="/One_page/js-plugin/magnific-popup/magnific-popup.css" />
-		<link type="text/css" rel="stylesheet" href="/One_page/js-plugin/isotope/css/style.css">
-		<link rel="stylesheet" type="text/css" href="/One_page/js-plugin/flexslider/flexslider.css" />
-		<link rel="stylesheet" type="text/css" href="/One_page/js-plugin/pageSlide/jquery.pageslide.css" />-->
-		<!-- Owl carousel-->
-		<!--<link rel="stylesheet" href="/One_page/js-plugin/owl.carousel/owl-carousel/owl.carousel.css">
-		<link rel="stylesheet" href="/One_page/js-plugin/owl.carousel/owl-carousel/owl.theme.css">
-		<link rel="stylesheet" href="/One_page/js-plugin/owl.carousel/owl-carousel/owl.transitions.css">-->
-		<!-- icon fonts -->
 		<link type="text/css" rel="stylesheet" href="/One_page/font-icons/custom-icons/css/custom-icons.css">
 		<link type="text/css" rel="stylesheet" href="/One_page/font-icons/custom-icons/css/custom-icons-ie7.css">
-		<!-- Custom css -->
 		<link type="text/css" rel="stylesheet" href="/One_page/css/layout.css">
 		<link type="text/css" id="colors" rel="stylesheet" href="/One_page/css/sea-green.css">
 		<link type="text/css" id="colors" rel="stylesheet" href="/One_page/css/czchen.css">
-		<!--[if lt IE 9]><script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script> <![endif]-->
 		<script src="/One_page/js/modernizr-2.6.1.min.js"></script>
-		<!-- Favicons
-		================================================== -->
-		<!--<link rel="shortcut icon" href="/One_page/images/favicon.ico">
-		<link rel="apple-touch-icon" href="images/apple-touch-icon.png">
-		<link rel="apple-touch-icon" sizes="72x72" href="/One_page/images/apple-touch-icon-72x72.png">
-		<link rel="apple-touch-icon" sizes="114x114" href="/One_page/images/apple-touch-icon-114x114.png">
-		<link rel="apple-touch-icon" sizes="144x144" href="/One_page/images/apple-touch-icon-144x144.png">-->
 		<style type="text/css">
 			.collapse {
     			display: none;
@@ -54,10 +29,8 @@
 	</head>
 	<body data-target="#scrollTarget" data-offset="150" id="fullScreen">
 		<div id="globalWrapper" class="localscroll">
-			<!-- header -->
 			<header id="mainHeader" class="navbar-fixed-top" role="banner" style="opacity: 1;transform: scaleY(1);background-color: rgba(255, 255, 255, 0.95);">
 				<div class="container">
-					<!--<nav class="navbar navbar-default scrollMenu" role="navigation">-->
 					<nav class="navbar navbar-default">
 						<div class="navbar-header">
 							<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>

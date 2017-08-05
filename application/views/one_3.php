@@ -141,7 +141,7 @@ select option{
 					</div>
 					<div class="form-group Ani-FadaIn" style="animation-delay: 1.0s;">
 						<div class="BG"></div>
-						<label for="mtype">服役軍種</label>
+						<label for="mtype">服役役別</label>
 						<select class="form-control" name="mtype">
 							<?php  echo $seloption;   ?>
 						</select>

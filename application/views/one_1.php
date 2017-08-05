@@ -5,19 +5,10 @@
 <!--[if (gte IE 9)|!(IE)]><!-->
 <html lang="en">
 <!--<![endif]-->
-	<?php include('one_top.php') ?>
-<style type="text/css">
-/*.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav>li>a:hover, .navbar-default .navbar-nav>li>a:focus, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
-    background: #7a2b00;
-    color: #fff;
-}*/
-</style>
+<?php include('one_top.php') ?>
+
 <section class="slice color4 section_fade" id="services" style="Z-INDEX: 10;position: relative;">
-<div style="width: 100VW;
-    height: 100%;
-    position: absolute;
-    height: calc(100VH);
-    top: 0em;overflow: hidden;"><div class="section-BG b02"></div></div>
+    <div class="section-BG b02"></div>
 					<div class="container">
 						<div class="row Ani-FadaIn" style="animation-delay: 2.2s;">
 							<div class="col-xs-12 P1-MT">
@@ -79,7 +70,7 @@
                                     <h1>
                                         <strong>戶口名簿/戶籍謄本</strong>
                                     </h1>
-                                    <P>可至戶政事務所申請，用以查驗全戶成員身分。</P>
+                                    <P>可至戶政事務所申請，用以查驗全戶成員身分。(可透過區公所調查)</P>
 
                                 </div>
                             </div>
@@ -99,7 +90,7 @@
                                     <h1>
                                         <strong>財產總歸戶清單</strong>
                                     </h1>
-                                    <P>可至國稅局/地方稅務局申請，用以查驗不動產與動產是否符合限額。</P>
+                                    <P>可至國稅局/地方稅務局，用以查驗不動產與動產是否符合限額。(可透過區公所調查)</P>
 
                                 </div>
                             </div>
@@ -119,7 +110,7 @@
                                     <h1>
                                         <strong>全戶所得清單</strong>
                                     </h1>
-                                    <P>可至國稅局/地方稅務局申請，用以查驗全戶所得是否符合限額以及列級等級。</P>
+                                    <P>可至國稅局/地方稅務局/戶政事務所申請，用以查驗全戶所得是否符合限額以及列級等級。(可透過區公所調查)</P>
 
                                 </div>
                             </div>
