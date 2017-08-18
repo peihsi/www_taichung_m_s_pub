@@ -40,7 +40,7 @@ body{    overflow: hidden;}
 }
 </style>
 <section  id="process" class="slice section_fade">
-<div class="section-BG b05"></div>
+<div class="section-BG b05"></div><div class="section-IE-filter"></div>
 						<div class="container">
 							<form method="post" action="/formhandler/queryprogress" id="queryfrm" role="form">
 							<div class="row"><br>

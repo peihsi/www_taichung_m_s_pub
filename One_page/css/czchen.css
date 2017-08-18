@@ -148,7 +148,8 @@ li {
     top: 28px;
     border-radius: 0.5rem;
     background: rgba(211, 211, 211, 0.36);
-    z-index: -1;
+    z-index: 0;
+    pointer-events:none;
 }
 
 #area_S{
@@ -364,7 +365,8 @@ li {
     position: absolute;
     top: 31px;
     right: 3px;
-    left: initial;
+    left: auto;
+    width: 40px;
 }
 
 .P3-Hbtn:hover{
@@ -374,7 +376,7 @@ li {
 }
 
 .section_fade {
-    min-height: CALC(100VH);
+    min-height: calc(100VH);
     align-items: center;
     display: flex;
     padding-top: 120px;
@@ -532,6 +534,17 @@ li {
     animation-fill-mode: forwards;
 }
 
+.section-IE-filter{
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    background: black;
+    top: 0px;
+    left: 0px;
+    opacity: 0;
+    display: none;
+}
+
 .Ani-FadaIn{
     opacity:0;
     animation-name: FadeIn;
@@ -541,39 +554,39 @@ li {
 
 @keyframes SlideBlurDark {
   0% {
-    transform: translate(0PX, -100VH) scale(1.02);
+    transform: translate(0px, -100%) scale(1.02);
     filter: blur(0px) brightness(100%);
   }
 
   40% {
-    transform: translate(0PX, 0VH) scale(1.02);
+    transform: translate(0px, 0%) scale(1.02);
     filter: blur(0px) brightness(100%);
   }
 
   100%{
-    transform: translate(0PX, 0VH) scale(1.02);
+    transform: translate(0px, 0%) scale(1.02);
     filter: blur(6px) brightness(30%);
   }
 }
 
 @keyframes SlideBlurDarkBG {
   0% {
-    transform: translate(0PX, -100VH) scale(1.02);
+    transform: translate(0px, -100%) scale(1.02);
     filter: blur(0px) brightness(100%);
   }
 
   40% {
-    transform: translate(0PX, 0VH) scale(1.02);
+    transform: translate(0px, 0%) scale(1.02);
     filter: blur(0px) brightness(100%);
   }
 
   100%{
-    transform: translate(0PX, 0VH) scale(1.02);
+    transform: translate(0PX, 0%) scale(1.02);
     filter: blur(6px) brightness(40%);
   }
 }
 
-@-webkit-keyframes FadeIn {
+@keyframes FadeIn {
     0% {
         opacity: 0;
     }
@@ -611,7 +624,7 @@ li {
     }
 
     .P0-MT, .P1-MT, .P2-MT{
-        margin-bottom: 0VH; 
+        margin-bottom: 0%; 
     }
 
     .P0-MT > h1{

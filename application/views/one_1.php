@@ -8,7 +8,7 @@
 <?php include('one_top.php') ?>
 
 <section class="slice color4 section_fade" id="services" style="Z-INDEX: 10;position: relative;">
-    <div class="section-BG b02"></div>
+    <div class="section-BG b02"></div><div class="section-IE-filter"></div>
 					<div class="container">
 						<div class="row Ani-FadaIn" style="animation-delay: 2.2s;">
 							<div class="col-xs-12 P1-MT">

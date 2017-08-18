@@ -43,7 +43,7 @@ select option{
 .modal-body ul li {padding-left: 5px;margin-bottom: 10px;}
 </style>
 <section class="slice section_fade" id="team" style="background: #ffffff;">
-<div class="section-BG b04"></div>
+<div class="section-BG b04"></div><div class="section-IE-filter"></div>
 	<div class="container">
 		<div class="row">
 			<div class="col-xs-12 " style="">

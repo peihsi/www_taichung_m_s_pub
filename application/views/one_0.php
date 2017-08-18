@@ -4,11 +4,7 @@
 <!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
 <!--[if (gte IE 9)|!(IE)]><!-->
 <html lang="en">
-<div id="preloader" style="position: fixed; top: 0; left: 0; right: 0; bottom: 0; z-index: 10000; background: white; text-align: center;">
-        <div id="status2" style="width: 100%; height: 100px; position: absolute; left: 0; top: 50%; margin-top: -100px; text-align: center; padding-top: 15px; text-transform: uppercase; border-radius: 11px;">
-            <img src="\One_page\images\loader.gif"><div id="Floading"></div><h1 class="noSubtitle">資料載入中</h1>
-        </div>
-    </div>
+
 <!--<![endif]-->
 	<?php include('one_top.php') ?>
 <style type="text/css">
@@ -16,9 +12,14 @@ h2.subTitle:after, h1.noSubtitle:after {
     background-color: #fefefe;
 }
 </style>
+<div id="preloader" style="position: fixed; top: 0; left: 0; right: 0; bottom: 0; z-index: 10000; background: white; text-align: center;">
+        <div id="status2" style="width: 100%; height: 100px; position: absolute; left: 0; top: 50%; margin-top: -100px; text-align: center; padding-top: 15px; text-transform: uppercase; border-radius: 11px;">
+            <img src="\One_page\images\loader.gif"><div id="Floading"></div><h1 class="noSubtitle">資料載入中</h1>
+        </div>
+    </div>
 				<!--<section class="slice noPaddingBottom section_fade" id="about"  data-stellar-background-ratio="0.5" style="padding-top: 8em;">-->
                 <section class="slice color4 section_fade" id="about" style="Z-INDEX: 10;position: relative;">
-				<div class="section-BG b01"></div>
+				<div class="section-BG b01"></div><div class="section-IE-filter"></div>
 					<div class="container">
 						<div class="row" >
 							<div class="col-xs-12 P0-MT Ani-FadaIn" style="animation-delay: 2.2s;">

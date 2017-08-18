@@ -1,6 +1,7 @@
 <head>
 		<!-- Basic Page Needs
 		================================================== -->
+		<meta http-equiv="x-ua-compatible" content="IE=edge">
 		<meta charset="utf-8">
 		<title>臺中市役男家屬扶助資訊網</title>
 		<meta name="description" content="臺中市 役男 服役 當兵 家屬 生活扶助 申請 資訊">

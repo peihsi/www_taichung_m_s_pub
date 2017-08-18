@@ -19,7 +19,7 @@ a {
 }
 </style>
 				<section class="slice section_fade" id="works">
-				<div class="section-BG b03" ></div>
+				<div class="section-BG b03" ></div><div class="section-IE-filter"></div>
 					<div class="container clearfix">
 						<div class="row P2-MT Ani-FadaIn" style="animation-delay: 2.2s;">
 							<div class="col-xs-12">
