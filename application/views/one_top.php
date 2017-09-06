@@ -10,7 +10,7 @@
 		================================================== -->
 		<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 		<link type="text/css" rel="stylesheet" href="/One_page/bootstrap/css/bootstrap.min.css">
-		<link href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,800" rel="stylesheet" type="text/css">
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,800" rel="stylesheet" type="text/css">
 		<link type="text/css" rel="stylesheet" href="/One_page/font-icons/custom-icons/css/custom-icons.css">
 		<link type="text/css" rel="stylesheet" href="/One_page/font-icons/custom-icons/css/custom-icons-ie7.css">
 		<link type="text/css" rel="stylesheet" href="/One_page/css/layout.css">
