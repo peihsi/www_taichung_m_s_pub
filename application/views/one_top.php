@@ -44,6 +44,7 @@
 									<li><a href="/page/P3"><i class="icon-users"></i>線上申請</a> </li>
 									<li style="display: none;" id="homeform-nav-li"><a href="#contactSlice" id="homeform-nav-bt"><i class="icon-mail"></i>線上登記</a> </li>
 									<li><a href="/page/P5"><i class="icon-users"></i>進度查詢</a> </li>
+									<li><a href="/page/P6"><i class="icon-phone"></i>聯絡資訊</a> </li>
 								</ul>
 							</div>
 

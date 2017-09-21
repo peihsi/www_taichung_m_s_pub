@@ -8,43 +8,29 @@
 <?php include('one_top.php') ?>
 
 <section class="slice color4 section_fade" id="services" style="Z-INDEX: 10;position: relative;">
-    <div class="section-BG b02"></div><div class="section-IE-filter"></div>
+    <div class="section-BG b06"></div><div class="section-IE-filter"></div>
 					<div class="container">
 						<div class="row Ani-FadaIn" style="animation-delay: 2.2s;">
-							<div class="col-xs-12 P1-MT">
-								<h1 style="font-weight: 600;">申請流程</h1>
-								<h2 class="subTitle">概略申請流程與申辦時之應備文件</h2>
+							<div class="col-xs-12 P6-MT">
+								<h1 style="font-weight: 600;">聯絡資訊</h1>
+								<h2 class="subTitle">臺中市政府民政局勤務管理科</h2>
 							</div>
 						</div>
 						<div class="row">
-							<div class="col-md-4 col-sm-4 P1-sec Ani-FadaIn" style="animation-delay: 2.5s;">
-								<a href="" class=""  data-toggle="modal" data-target="#P1-1Modal">
-									<article class="boxFeature-2">
-										<i class="icon-news iconBig"></i>
-										<h2>應備文件</h2>
-										<!--<p>民眾應事先準備好那些證明文件呢?</p>-->
-									</article>
-								</a>
-							</div>
+							<div class="col-md-12 col-sm-12">
+                                <div class="P6-sec Ani-FadaIn" style="animation-delay: 2.5s;">
+                                    <h2>連絡電話</h2>
+                                    <p><a href="tel:+886422289111">(04)&nbsp22289111&nbsp#29503</a></p>
+                                </div>
+								
 
-							<div class="col-md-4 col-sm-4 P1-sec Ani-FadaIn" style="animation-delay: 2.8s;">
-								<a href="" class="" data-toggle="modal" data-target="#P1-2Modal">
-									<article class="boxFeature-2">
-										<i class="icon-location iconBig"></i>
-										<h2>臺中各地區公所</h2>
-										<!--<p>臺中市29區區公所之地址與連絡方式</p>-->
-									</article>
-								</a>
 							</div>
-							<div class="col-md-4 col-sm-4 P1-sec Ani-FadaIn" style="animation-delay: 3.1s;">
-								<a href="" class="" data-toggle="modal" data-target="#P1-3Modal">
-									<article class="boxFeature-2">
-										<i class="icon-clipboard iconBig"></i>
-										<h2>扶助申辦作業流程圖</h2>
-										<!--<p>臺中市29區區公所之地址與連絡方式</p>-->
-									</article>
-								</a>
-							</div>
+                            <div class="col-md-12 col-sm-12">
+                                <div class="P6-sec Ani-FadaIn" style="animation-delay: 2.8s;">
+                                    <h2>機關地址</h2>
+                                    <p>(40701)&nbsp臺中市西屯區 臺灣大道三段99號</p>
+                                </div>
+                            </div>
 						</div>
 					</div>
 				</section>
@@ -285,7 +271,7 @@
 
 				<?php include('one_bottom.php') ?>
 		<script type="text/javascript">
-			$("#scrollTarget > ul > li").eq(1).addClass('active');
+			$("#scrollTarget > ul > li").eq(6).addClass('active');
 			$("body").stop().animate({scrollTop:0}, 500, 'swing');
 			var MAP_A = new Array();
 MAP_A["中區區公所"]=["http://www.central.taichung.gov.tw/",  "tel:+886422222502",    "04-2222-2502",     "40044 臺中市中區成功路300號3樓","https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1051.6014266516638!2d120.67950230379242!3d24.143733596833172!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0000000000000000%3A0x4f731237deaa9639!2z5Lit5Y2A5Y2A5YWs5omA!5e0!3m2!1szh-TW!2stw!4v1446131455639"];

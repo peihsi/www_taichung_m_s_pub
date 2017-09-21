@@ -67,6 +67,10 @@ class Page extends CI_Controller {
 	{
 		$this->load->view('one_5');
 	}
+	public function P6()
+	{
+		$this->load->view('one_6');
+	}
 
 	//echo time();
 	public function A1()

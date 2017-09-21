@@ -28,12 +28,12 @@ a {
 							</div>
 						</div>
 						<div class="row">
-							<a class="col-sm-4 Ref3x3 Ani-FadaIn" href="" style="animation-delay: 2.5s;" data-toggle="modal" data-target="#P2-1-Modal"><h3>安家費與三節慰問金</h3><p>安家費與三節慰問金的發放標準</p></a>
-							<a class="col-sm-4 Ref3x3 Ani-FadaIn" href="" style="animation-delay: 2.8s;" data-toggle="modal" data-target="#P2-2-Modal"><h3>低收入戶不動產標準</h3><p>106年度低收入戶財產標準</p></a>
+							<a class="col-sm-4 Ref3x3 Ani-FadaIn" href="" style="animation-delay: 2.5s;" data-toggle="modal" data-target="#P2-1-Modal"><h3>安家費與三節扶助金</h3><p>安家費與三節扶助金的發放標準</p></a>
+							<a class="col-sm-4 Ref3x3 Ani-FadaIn" href="" style="animation-delay: 2.8s;" data-toggle="modal" data-target="#P2-2-Modal"><h3>不動產限額</h3><p>106年度不動產限額標準</p></a>
 							<a class="col-sm-4 Ref3x3 Ani-FadaIn" href="" style="animation-delay: 3.1s;" data-toggle="modal" data-target="#P2-3-Modal"><h3>各等級扶助標準</h3><p>三種等級與不同役期之扶助標準</p></a>
 						</div>
 						<div class="row">
-							<a class="col-sm-4 Ref3x3 Ani-FadaIn" href="" style="animation-delay: 3.4s;" data-toggle="modal" data-target="#P2-4-Modal"><h3>低收入戶所得限制</h3><p>106年度低收入戶所得認定標準</p></a>
+							<a class="col-sm-4 Ref3x3 Ani-FadaIn" href="" style="animation-delay: 3.4s;" data-toggle="modal" data-target="#P2-4-Modal"><h3>最低生活費</h3><p>106年度最低生活費認定標準</p></a>
 							<a class="col-sm-4 Ref3x3 Ani-FadaIn" href="" style="animation-delay: 3.7s;" data-toggle="modal" data-target="#P2-5-Modal"><h3>完整法條參照</h3><p>服兵役役男家屬生活扶助實施辦法</p></a>
 						</div>
 					</div>
@@ -44,10 +44,10 @@ a {
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal">&times;</button>
-        <h4 class="modal-title">安家費與三節慰問金標準</h4>
+        <h4 class="modal-title">安家費與三節扶助金標準</h4>
       </div>
       <div class="modal-body">
-        <p>役男徵集服役達1個月以上者，依核列等級，按其役期長短發給一次安家費及春節、端午、中秋等三節生活扶助金。<br></p>
+        <p>役男服役達2個月以上者，依核列等級，按其役期長短發給一次安家費及春節、端午、中秋等三節生活扶助金。<br></p>
         		<div class="row office_list">
 					<table class="table table-condensed table-responsive" style="width: 90%; margin: auto;">
 						<thead>
@@ -188,7 +188,7 @@ a {
         <h4 class="modal-title">106年度各縣市每人最低生活費</h4>
       </div>
       <div class="modal-body">
-		<p>家戶所得之規定如下：<ul style="list-style-type: cjk-ideographic;"><li> 家庭總收入，指役男與其家屬之存款利息、動產及不動產收益、研發或產業訓儲替代役役男第三階段服役期間之工作收入扣除其戶籍所在地當年最低生活費後之淨額、其他收入及役男家屬工作收入之總額。但社會救助給付之收入，不列入家庭總收入計算。</li><li> 106年度各縣市不動產限額如下表</li></ul><div class="row office_list">
+		<p><div class="row office_list">
 					<table class="table table-condensed table-responsive" style="width: 90%; margin: auto;">
 						<thead>
 							<tr>
